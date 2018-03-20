@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = '13.229.101.149';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '12345';
 $db['default']['database'] = 'wika_uttara';
