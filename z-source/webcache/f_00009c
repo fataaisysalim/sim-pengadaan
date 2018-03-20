@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Spending</title>
+        <meta name="description" content="Point of Sale for Restaurant & Cafe">
+        <meta name="author" content="CV. Folarium Technomedia">
+        <link rel="icon" href="http://192.168.1.4/forder-nasiudukpalagan/assets/img/favicon.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="http://192.168.1.4/forder-nasiudukpalagan/assets/min/main.min.css">
+        <link rel="stylesheet" href="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/bootstrap-select/bootstrap-select.css">
+        <link rel="stylesheet" href="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/datatables/jquery.dataTables.css">
+        <link rel="stylesheet" href="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/bootstrap-datepicker/datepicker.css">
+        <link rel="stylesheet" href="http://192.168.1.4/forder-nasiudukpalagan/assets/js/jquery-ui.css">
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/js/jquery-1.11.1.min.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/js/jquery.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/modernizr.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="app">
+            <header class="header header-fixed navbar bg-white">
+    <a role="button" style="cursor: pointer; color: white" class="fa fa-bars navbar-toggle off-left visible-xs" data-toggle="collapse" data-target="#hor-menu"></a>
+    <div class="brand bg-dark width-auto">
+        <a href="http://192.168.1.4/forder-nasiudukpalagan/home" class="navbar-brand"  style="color: white;">
+            FORDER        </a>
+    </div>
+    <div class="collapse navbar-collapse pull-left no-padding " id="hor-menu">
+        <ul class="nav navbar-nav" >
+            <li class=" hidden-xs">
+                <a href="http://192.168.1.4/forder-nasiudukpalagan/home"><i class="fa fa-home"></i><span class="visible-lg mg-l-sm pull-right"> Home</span></a>
+            </li>
+                            <li class="dropdown show-on-hover ">
+                    <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                        <i class="fa fa-archive col-xs-2 visible-xs"></i><i class="fa fa-archive mg-r-sm hidden-xs"></i>
+                        <span class="hidden-sm">Master Data</span>
+                        <b class="caret mg-l-md"></b>
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li class="">
+                            <a href="http://192.168.1.4/forder-nasiudukpalagan/master/menu"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Menu/Item Master</span></a>
+                        </li>
+                        <li class="">
+                            <a href="http://192.168.1.4/forder-nasiudukpalagan/table-master"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Table Master</span></a>
+                        </li>
+                        <li class="">
+                            <a href="http://192.168.1.4/forder-nasiudukpalagan/master/users"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>User Permission</span></a>
+                        </li>
+                    </ul>
+                </li>
+                        <li class=" hidden-xs">
+                <a href="http://192.168.1.4/forder-nasiudukpalagan/order"><i class="fa fa-thumb-tack mg-r-md mg-r-sm"></i><span> Order</span></a>
+            </li>
+                            <li class="">
+                    <a href="http://192.168.1.4/forder-nasiudukpalagan/cashier"><i class="fa fa-money col-xs-2 visible-xs"></i><i class="fa fa-money mg-r-sm hidden-xs"></i><span> Cashier</span></a>
+                </li>
+            
+            <li class="dropdown show-on-hover  ">
+                <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                    <i class="fa fa-th-large col-xs-2 visible-xs"></i><i class="fa fa-th-large mg-r-sm hidden-xs"></i>
+                    <span>Information</span>
+                    <b class="caret mg-l-md"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a role="button" class="info_menu" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Menu Available</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_meja" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Table Available</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_order" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Orders</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_pay" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Payments</span></a>
+                    </li>
+                                            <li>
+                            <a role="button" id="menu_sold" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Average Menu Sold Out</span></a>
+                        </li>
+                                                                <li>
+                            <a role="button" id="info_menu_best" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>15 Menu Best Seller</span></a>
+                        </li>
+                                    </ul>
+            </li>
+                                        <li class="dropdown show-on-hover hidden-xs active">
+                    <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                        <i class="fa fa-dollar mg-r-sm"></i>
+                        <span class="hidden-sm">Finance</span>
+                        <b class="caret mg-l-sm"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                                                    <li class="active hidden-xs">
+                                <a href="http://192.168.1.4/forder-nasiudukpalagan/spending"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Spending</span></a>
+                            </li>
+                                                                            <li class="">
+                                <a href="http://192.168.1.4/forder-nasiudukpalagan/saldo"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Saldo</span></a>
+                            </li>
+
+                            <li class=" hidden-xs">
+                                <a href="http://192.168.1.4/forder-nasiudukpalagan/profit-report"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i>Profit Report</a>
+                            </li>
+        <!--                            <li class=" hidden-xs">
+                                <a href="http://192.168.1.4/forder-nasiudukpalagan/report/operational_cooperation"><i class="fa fa-chevron-right mg-r-md"></i><span>KSO</span></a>
+                            </li>-->
+                                            </ul>
+                </li>
+                                    <li class="active visible-xs">
+                        <a href="http://192.168.1.4/forder-nasiudukpalagan/spending"><i class="fa fa-suitcase col-xs-2"></i><span> Spending</span></a>
+                    </li>
+                                                       <li class=" visible-xs">
+                                <a href="http://192.168.1.4/forder-nasiudukpalagan/saldo"><i class="fa fa-cloud-upload col-xs-2 visible-xs"></i><i class="fa fa-cloud-upload mg-r-sm hidden-xs"></i><span>Saldo</span></a>
+                            </li>
+                                                    <li class=" visible-xs">
+                        <a href="http://192.168.1.4/forder-nasiudukpalagan/profit-report"><i class="fa fa-clipboard col-xs-2"></i>Profit Report</a>
+                    </li>
+                            
+                            <li class="">
+                    <a href="http://192.168.1.4/forder-nasiudukpalagan/apps/profile"><i class="fa fa-gears col-xs-2 visible-xs"></i><i class="fa fa-gears mg-r-sm hidden-xs"></i><span class="hidden-sm"> Settings</span></a>
+                </li>
+                        <li class="visible-sm">
+                <a role="button" style="cursor: pointer" class="logout"><i class="fa fa-sign-out"></i></a>
+            </li>
+        </ul>
+    </div>
+    <a role="button" style="cursor: pointer; color: white" class="logout visible-xs off-right btn btn-lg"><i class="fa fa-sign-out"></i></a>
+    <ul class="nav navbar-nav navbar-right visible-lg visible-md off-right">
+        <li class="">
+            <a role="button" title="Tentang Vendor" class="about_forder" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-sm"><i class="fa fa-info-circle"></i></a>
+        </li>
+        <li class="quickmenu show-on-hover mg-r-md ">
+            <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                <i class="fa fa-user mg-r-sm"></i>
+                <i class="caret mg-l-xs hidden-xs no-margin"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right mg-r-xs">
+                <li class=""><a href="http://192.168.1.4/forder-nasiudukpalagan/setting/profile"><i class="fa fa-gear mg-r-sm"></i> Anissa</a></li>
+                <li class="divider"></li>
+                <li><a role="button" style="cursor: pointer" class="logout"><i class="fa fa-sign-out mg-r-sm"></i> Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>    
+            <section class="layout">
+                <section class="main-content">
+                    <div class="content-wrap">
+                        <div class="row">
+    <div class="col-lg-12 visible-xs">
+        <a href="http://192.168.1.4/forder-nasiudukpalagan/spending/form" class="add_out btn btn-warning mg-b-md col-xs-12 pd-sm" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-plus-circle mg-r-md"></i>New Spending</a>
+    </div>
+</div>
+<div class="row">
+    <div class="loadertab col-lg-9 col-md-12"><div class="loader mg-t"><i class="fa fa-refresh fa-spin mg-r-md"></i>Loading data. Please wait...</div></div>
+    <div class="col-lg-9 col-md-8 col-sm-12">
+        <div class="row">
+            <div class="col-lg-7 col-md-8 col-sm-6 col-xs-6">
+                <div class="form-group row">
+                    <label class="col-lg-4 col-md-5 col-sm-12 col-xs-12 pd-t-xs">Spending Status</label>
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <select class="status_out form-control" onchange="statusOut()">
+                            <option value="all">Choose Spending Status</option>
+                            <option value="c4ca4238a0b923820dcc509a6f75849b">Cancel</option>
+                            <option value="cfcd208495d565ef66e7dff9f98764da">Valid</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5">
+                <div style="margin-top: 29px" class="visible-xs visible-sm"></div>
+                <div class="input-group input-append date datepicker row" style="margin-top: -5px" data-date="14-01-2016" data-date-format="dd-mm-yyyy">
+                    <input onchange="statusOut()" type="text" class="date-out form-control bg-default" value="14-01-2016">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info add-on" type="button">
+                            <i class="fa fa-calendar"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="loadout"></div>
+    </div>
+    <div class="col-lg-3 col-md-4 row">
+        <div class="col-md-12 col-sm-6 hidden-xs">
+            <a href="http://192.168.1.4/forder-nasiudukpalagan/report/finance" class="btn btn-info mg-b-md col-xs-12 hidden-xs pd-sm"><i class="fa fa-clipboard pull-left"></i><span class="pull-right">Profit Report</span></a>
+        </div>
+                <div class="col-md-12 col-sm-6 hidden-xs">
+            <a role="button" style="cursor: pointer" class="add_out btn btn-warning mg-b-md col-xs-12 pd-sm" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-plus-circle pull-left"></i><span class="pull-right">New Spending</span></a>
+        </div>
+        <div class="col-xs-12">
+            <b class="mg-b-sm">Attention :</b>
+            <ul class="mg-t-sm">
+                <li><i class="fa fa-chevron-circle-right mg-r-md"></i>Status digunakan untuk batal atau terverifikasi.</li>
+                <li><i class="fa fa-chevron-circle-right mg-r-md"></i>Pengeluaran tidak dapat dihapus tapi dapat dibatalkan.</li>
+                <li><i class="fa fa-chevron-circle-right mg-r-md"></i>Pastikan data pengisian dilengkapi</li>
+            </ul>
+        </div> 
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".datepicker").datepicker();
+        $(".loadout").load('http://192.168.1.4/forder-nasiudukpalagan/spending/data/all/' + $(".date-out").val());
+    });
+    function statusOut() {
+        $(".loadout").load('http://192.168.1.4/forder-nasiudukpalagan/spending/data/' + $(".status_out").val() + '/' + $(".date-out").val());
+    }
+</script>
+
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title text-center" id="myModalLabel">Loading please wait...</h5>
+            </div>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title text-center" id="myModalLabel">Loading please wait...</h5>
+            </div>
+            <div id="modal-contents"></div>
+        </div>
+    </div>
+</div>        <script type="text/javascript">
+            var now = "14-01-2016";
+            var baseUrl = "http://192.168.1.4/forder-nasiudukpalagan/";
+            $("#menu_sold").click(function() {
+                $(".modal-title").html('<div class="loader mg-t"><i class="fa fa-spin fa-refresh mg-r-md"></i>Loading data. Please wait...');
+                $("#modal-contents").html("");
+                $("#modal-contents").load(baseUrl + "info/menu/info_menu/menu_sold")
+            });
+            $("#info_menu_best").click(function() {
+                $(".modal-title").html('<div class="loader mg-t"><i class="fa fa-spin fa-refresh mg-r-md"></i>Loading data. Please wait...');
+                $("#modal-contents").html("");
+                $("#modal-contents").load(baseUrl + "info/menu/info_menu/menu_best")
+            });
+        </script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/folarium/for.library.min.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/min/main.min.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/bootbox/bootbox.min.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/datatables/jquery.dataTables.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/bootstrap-select/bootstrap-select.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/slider/bootstrap-slider.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/js/highcharts.js"></script>
+        <script src="http://192.168.1.4/forder-nasiudukpalagan/assets/js/exporting.js"></script>
+    </body>
+</html>

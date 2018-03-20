@@ -1,0 +1,58 @@
+Welcome to FORDER of Installation Tutorial & Information Features Available
+===========================================================================
+
+FORDER builded by FOLARIUM CORPORATION of Indonesia on 2015.
+FORDER is one of our best products that we offer at affordable prices.
+
+Our Contact :
+----------------------------
+Address		Jl. Miliran No. 38 B, Yogyakarta
+Telephone	(0274) 541 802
+Handphone	0812 2813 0893
+Email		support@folarium.org
+Website		www.folarium.org
+
+-------------------------------------------------------------
+Features Available Now :
+- Order ( Via PC of Cashier or Tablet/Smartphone of Waiters)
+- Cashier (Extra Inc. Discount (Choice IDR / % ), Tax, Payment Method)
+- Spending
+- Finance Report
+	- Profit Daily Report
+	- Tax Daily Report
+- Saldo
+- Sold Analytic
+	- 15 Menu Best Seller
+	- Average Menu Sold
+	- Profit Calculate per Year (Income, Spending & Saldo)
+- User Permission
+- Manage Menu / Item
+- Manage Table
+- Information Table Available
+- Information Menu/Item Available
+- Information Order
+- Information Payment
+- Setting Profile System
+
+--------------------------------------------
+INSTALLATION REQUIREMENT
+
+1. PC - Proc Core2Duo, RAM 1 GB, HDD 80 GB
+2. 1 Printer Cashier - Paper size 80mm
+3. 2 Printer Order - Optional
+4. XAMPP > 5.6
+5. setup.exe of FORDER
+----------------------------------------------
+INSTALLATION STEP
+
+1. Install XAMPP > 5.6 (Apache & MySQL) as Data Server
+2. Download php_printer.dll & php_printer_nts.dll then move to XAMPP/php/ext
+3. Edit php.ini
+	Paste : extension=php_printer.dll
+4. Install setup.exe of FORDER
+5. Make sure XAMPP & FORDER shortcut is placed in the windows startup
+6. Install Printer with Cashier's Name for Print cashier, Bars for drinks & Kitchen to Kitchen
+7. When finished, please restart first.
+8. Congratulations Your FORDER System are ready to use.
+
+

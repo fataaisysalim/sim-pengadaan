@@ -1,0 +1,3 @@
+monitoring upah mandor field nomor,unit kerja, nama mandor, nomor sp3, tgl, upah mandor, tarif, nomor bukti  parameter tanggal karo projek
+
+laporan pph pasal 21 lengkap parameter tanggal karo projek

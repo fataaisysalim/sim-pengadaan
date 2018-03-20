@@ -1,0 +1,14 @@
+
+Bruto adalah Netto + PPn
+Potongan adalah PPH23 dihasilkan dari NEtto * %pph (didefault 3%) tapi ada subkon khusus yang bisa jadi %4 apabila subkon duwe pkp.
+Jumlah diperoleh dari Netto + PPN - PPH 23
+
+
+Apabila invoice tersebut sudah dibayarkan masuk pada saldo hutang kolom dibayar
+apabila invoice tersebut belum dibayarkan masuk pada saldo hutang kolom sisa hutang
+
+orek orekan
+===========
+bruto neto + ppnn
+3% netto
+bruto - pph23 

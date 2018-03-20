@@ -1,0 +1,41 @@
+Status 
+1 : active
+0 : tidak aktif
+
+mog_td
+1 : ok
+0 : hapus
+
+kode resource
+1 : Material
+2 : Equipment
+
+mog_status
+0 : proses transaksi gudang (proses)
+1 : proses transaksi pengadaan (proses selesai)
+4 : selesai invoice
+
+equipt_transaction_status
+0 : proses transaksi gudang (proses)
+1 : proses transaksi pengadaan (proses selesai)
+3 : peralatan kembali
+4 : selesai invoice
+
+invoice_payment_status 
+0 : blm dibayar (default)
+1 : lunas
+2 : hutang
+
+kolom transaction_id pada tabel invoice_dt = referensi dari mog atau equipt_transaction
+kolom invoice_resource_code pada tabel invoice = untuk membedakan material atau equipment
+
+invoice_resource_code
+1 : Material
+2 : Equipment
+4 : Subkon
+
+work_order_status
+0 : blm dibuat invoice
+1 : sudah invoice uang muka
+2 : sudah invoice termin 100%
+3 : sudah invoice retensi

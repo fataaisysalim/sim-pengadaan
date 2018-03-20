@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Profile System</title>
+        <meta name="description" content="Point of Sale for Restaurant & Cafe">
+        <meta name="author" content="CV. Folarium Technomedia">
+        <link rel="icon" href="http://localhost/forder-nasiudukpalagan/assets/img/favicon.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/min/main.min.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-select/bootstrap-select.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/vendor/datatables/jquery.dataTables.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-datepicker/datepicker.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/js/jquery-ui.css">
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/jquery-1.11.1.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/jquery.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/modernizr.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="app">
+            <header class="header header-fixed navbar bg-white">
+    <a role="button" style="cursor: pointer; color: white" class="fa fa-bars navbar-toggle off-left visible-xs" data-toggle="collapse" data-target="#hor-menu"></a>
+    <div class="brand bg-dark width-auto">
+        <a href="http://localhost/forder-nasiudukpalagan/home" class="navbar-brand"  style="color: white;">
+            FORDER        </a>
+    </div>
+    <div class="collapse navbar-collapse pull-left no-padding " id="hor-menu">
+        <ul class="nav navbar-nav" >
+            <li class=" hidden-xs">
+                <a href="http://localhost/forder-nasiudukpalagan/home"><i class="fa fa-home"></i><span class="visible-lg mg-l-sm pull-right"> Home</span></a>
+            </li>
+                            <li class="dropdown show-on-hover ">
+                    <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                        <i class="fa fa-archive col-xs-2 visible-xs"></i><i class="fa fa-archive mg-r-sm hidden-xs"></i>
+                        <span class="hidden-sm">Master Data</span>
+                        <b class="caret mg-l-md"></b>
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li class="">
+                            <a href="http://localhost/forder-nasiudukpalagan/master/menu"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Menu/Item Master</span></a>
+                        </li>
+                        <li class="">
+                            <a href="http://localhost/forder-nasiudukpalagan/table-master"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Table Master</span></a>
+                        </li>
+                        <li class="">
+                            <a href="http://localhost/forder-nasiudukpalagan/master/users"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>User Permission</span></a>
+                        </li>
+                    </ul>
+                </li>
+                        <li class=" hidden-xs">
+                <a href="http://localhost/forder-nasiudukpalagan/order"><i class="fa fa-thumb-tack mg-r-md mg-r-sm"></i><span> Order</span></a>
+            </li>
+                            <li class="">
+                    <a href="http://localhost/forder-nasiudukpalagan/cashier"><i class="fa fa-money col-xs-2 visible-xs"></i><i class="fa fa-money mg-r-sm hidden-xs"></i><span> Cashier</span></a>
+                </li>
+            
+            <li class="dropdown show-on-hover  ">
+                <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                    <i class="fa fa-th-large col-xs-2 visible-xs"></i><i class="fa fa-th-large mg-r-sm hidden-xs"></i>
+                    <span>Information</span>
+                    <b class="caret mg-l-md"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a role="button" class="info_menu" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Menu Available</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_meja" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Table Available</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_order" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Orders</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_pay" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Payments</span></a>
+                    </li>
+                                            <li>
+                            <a role="button" id="menu_sold" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Average Menu Sold Out</span></a>
+                        </li>
+                                                                <li>
+                            <a role="button" id="info_menu_best" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>15 Menu Best Seller</span></a>
+                        </li>
+                                    </ul>
+            </li>
+                                        <li class="dropdown show-on-hover hidden-xs ">
+                    <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                        <i class="fa fa-dollar mg-r-sm"></i>
+                        <span class="hidden-sm">Finance</span>
+                        <b class="caret mg-l-sm"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                                                    <li class=" hidden-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/spending"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Spending</span></a>
+                            </li>
+                                                                            <li class="">
+                                <a href="http://localhost/forder-nasiudukpalagan/saldo"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Saldo</span></a>
+                            </li>
+
+                            <li class=" hidden-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/profit-report"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i>Profit Report</a>
+                            </li>
+        <!--                            <li class=" hidden-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/report/operational_cooperation"><i class="fa fa-chevron-right mg-r-md"></i><span>KSO</span></a>
+                            </li>-->
+                                            </ul>
+                </li>
+                                    <li class=" visible-xs">
+                        <a href="http://localhost/forder-nasiudukpalagan/spending"><i class="fa fa-suitcase col-xs-2"></i><span> Spending</span></a>
+                    </li>
+                                                       <li class=" visible-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/saldo"><i class="fa fa-cloud-upload col-xs-2 visible-xs"></i><i class="fa fa-cloud-upload mg-r-sm hidden-xs"></i><span>Saldo</span></a>
+                            </li>
+                                                    <li class=" visible-xs">
+                        <a href="http://localhost/forder-nasiudukpalagan/profit-report"><i class="fa fa-clipboard col-xs-2"></i>Profit Report</a>
+                    </li>
+                            
+                            <li class="active">
+                    <a href="http://localhost/forder-nasiudukpalagan/apps/profile"><i class="fa fa-gears col-xs-2 visible-xs"></i><i class="fa fa-gears mg-r-sm hidden-xs"></i><span class="hidden-sm"> Settings</span></a>
+                </li>
+                        <li class="visible-sm">
+                <a role="button" style="cursor: pointer" class="logout"><i class="fa fa-sign-out"></i></a>
+            </li>
+        </ul>
+    </div>
+    <a role="button" style="cursor: pointer; color: white" class="logout visible-xs off-right btn btn-lg"><i class="fa fa-sign-out"></i></a>
+    <ul class="nav navbar-nav navbar-right visible-lg visible-md off-right">
+        <li class="">
+            <a role="button" title="Tentang Vendor" class="about_forder" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-sm"><i class="fa fa-info-circle"></i></a>
+        </li>
+        <li class="quickmenu show-on-hover mg-r-md ">
+            <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                <i class="fa fa-user mg-r-sm"></i>
+                <i class="caret mg-l-xs hidden-xs no-margin"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right mg-r-xs">
+                <li class=""><a href="http://localhost/forder-nasiudukpalagan/setting/profile"><i class="fa fa-gear mg-r-sm"></i> Anissa</a></li>
+                <li class="divider"></li>
+                <li><a role="button" style="cursor: pointer" class="logout"><i class="fa fa-sign-out mg-r-sm"></i> Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>    
+            <section class="layout">
+                <section class="main-content">
+                    <div class="content-wrap">
+                        <form role="form" id="formsystem" method="post" enctype="multipart/form-data" action="http://localhost/forder-nasiudukpalagan/apps/profile/">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="panel panel-warning">
+                <header class="panel-heading lead">
+                    <i class="fa fa-home mg-r-sm"></i> Profile System                </header>
+                <div class="panel-body" style="padding-top: 0;">
+                    <div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 visible-lg visible-md">
+                            <a role="button" onclick="proupdate('top')" style="cursor: pointer" title="Click here to edit Profile System">
+                                <img src="http://localhost/forder-nasiudukpalagan/assets/folarium/forder.png" class="col-sm-11 col-md-10"/>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class='row'>
+                                        <div class="col-lg-4 col-sm-5 col-md-4">
+                                            <div class="form-group">
+                                                <label>Business Category</label>
+                                                <select class="form-control" name="sistem_ct">
+                                                    <option value="" selected>Choose Category</option>
+                                                    <option value="Kafe" >Kafe</option>
+                                                    <option value="Rumah Makan" >Rumah Makan</option>
+                                                    <option value="Warung Makan" >Warung Makan</option>
+                                                    <option value="Toko" >Toko</option>
+                                                </select>
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-sm-7 col-md-8">
+                                            <div class="form-group">
+                                                <label>Business Name</label>
+                                                <input type="text" maxlength="24" name="sistem_name" value="Digital Resto System" class="form-control" placeholder="Business Name. Max 24 Character ">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class='row'>
+                                        <div class="col-lg-4 col-sm-5 col-md-5">
+                                            <div class="form-group">
+                                                <label>Business Phone</label>
+                                                <div class="input-group input-group-md">
+                                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                    <input type="text" maxlength="14" name="sistem_phone" value="0274 541802" class="form-control" placeholder="Nomor Telephone. Max 14 Character">
+                                                </div>
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-7 col-sm-7 col-lg-8">
+                                            <label>Business Address</label>
+                                            <div class="input-group input-group-md">
+                                                <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                                                <input type="text" maxlength="36" name="sistem_address" value="Jl. Miliran No. 38 B, Yogyakarta" class="form-control" placeholder="Address. Max 36 Character">
+                                            </div>
+                                            <p class="help-block"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class='row'>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label>Website</label>
+                                            <div class="input-group input-group-md">
+                                                <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                                                <input type="text" name="sistem_site" maxlength="36" value="www.folarium.org" class="form-control" placeholder="Website. ex: www.domain.com. Max 36 Character">
+                                            </div>
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6">
+                                            <label>Email</label>
+                                            <div class="input-group input-group-md">
+                                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                <input type="email" name="sistem_mail" value="admin@folarium.org" class="form-control" placeholder="Email. ex: name@domain.com">
+                                            </div>
+                                            <p class="help-block"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Business Logo</label>
+                                </div>
+                                <div class="form-group">
+                                    <img src="http://localhost/forder-nasiudukpalagan/assets/system/881835879forder.bmp" class="col-xs-8 col-sm-8 col-md-6 mg-t-sm"/>
+                                                                            <button type="button" onclick="clearlogo()" class="btn btn-danger mg-l-md"><i class="fa fa-trash-o"></i></button>
+                                                                    </div>
+                            </div>
+                            <input type="file" name="userfile" class="form-control mg-t-sm" style="padding-bottom: 40px" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-xs-12">
+                                <div id="submt">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <button type="submit" class="subt btn btn-primary col-lg-12 col-xs-12"><i class="fa fa-check mg-r-sm"></i> Save</button>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button type="button" id="back" class="btn btn-danger col-lg-12 col-xs-12"><i class="fa fa-times mg-r-sm"></i> Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-dark col-xs-12 hidden-md hidden-lg" id="bottom" onclick="proupdate('bottom')"><i class="fa fa-pencil mg-r-sm"></i>Update Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 mg-t-lg">
+                    <i class="visible-lg visible-md mg-b-sm"><i class="fa fa-chevron-right mg-r-sm"></i>Untuk mengubah <b>profile system forder</b>, silahkan click logo forder diatas.</i>
+                    <i><i class="fa fa-chevron-right mg-r-sm"></i>Business logo ditampilkan pada struk nota atau tagihan, pastikan format logo .bmp</i><br class="mg-b-sm"/>
+                    <i><i class="fa fa-chevron-right mg-r-sm"></i>Apabila ada pertanyaan atau ingin konsultasi mengenai pengembangan fitur, dapat menghubungi vendor.</i><br class="mg-b-sm"/>
+                    <i><i class="fa fa-chevron-right mg-r-sm"></i>Mohon disampaikan kritik & saran guna pengembangan <b>FORDER System</b> yang lebih baik.</i>
+                </div>
+            </section>
+        </div>
+    </div>
+</form>
+<script>
+    $('input').attr('disabled', 'disabled');
+    $('textarea').attr('disabled', 'disabled');
+    $('#submt').hide();
+    function proupdate(cond) {
+        if(cond == "bottom"){
+            $("#bottom").hide();
+        }
+        $("#submt").show("slow");
+        $("input").removeAttr("disabled","disabled");
+        $("textarea").removeAttr("disabled","disabled")
+    };
+    function clearlogo(){
+        $(this).each(function() {
+            bootbox.confirm("<i class='fa fa-warning mg-r-sm'></i>Anda yakin untuk menghapus logo bisnis anda ?", function(a) {
+                1 == a && (window.location.href= "http://localhost/forder-nasiudukpalagan/apps/logo-clear")
+            })
+        })
+        
+    }
+    $(".subt").click(function() {
+        $("input").attr("readonly", "readonly");
+        $("textarea").attr("readonly", "readonly")
+    });
+    $("#back").on("click", function() {
+        $("input").attr("disabled", "disabled");
+        $("textarea").attr("disabled", "disabled");
+        $("#submt").hide("slow");
+        $("#bottom").show("slow");
+    });
+    $("#formsystem").submit(function() {
+        var attach = $("input[name=userfile]").val();
+        var extmg = attach.split('.').pop();
+        if (attach != '') {
+            if (extmg != 'bmp') {
+                bootbox.alert("<i class='fa fa-warning mg-r-sm'></i>Format Logo not allowed. Please use format .bmp !");
+                return false;
+            }
+        }
+    });
+</script>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title text-center" id="myModalLabel">Loading please wait...</h5>
+            </div>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title text-center" id="myModalLabel">Loading please wait...</h5>
+            </div>
+            <div id="modal-contents"></div>
+        </div>
+    </div>
+</div>        <script type="text/javascript">
+            var now = "13-01-2016";
+            var baseUrl = "http://localhost/forder-nasiudukpalagan/";
+            $("#menu_sold").click(function() {
+                $(".modal-title").html('<div class="loader mg-t"><i class="fa fa-spin fa-refresh mg-r-md"></i>Loading data. Please wait...');
+                $("#modal-contents").html("");
+                $("#modal-contents").load(baseUrl + "info/menu/info_menu/menu_sold")
+            });
+            $("#info_menu_best").click(function() {
+                $(".modal-title").html('<div class="loader mg-t"><i class="fa fa-spin fa-refresh mg-r-md"></i>Loading data. Please wait...');
+                $("#modal-contents").html("");
+                $("#modal-contents").load(baseUrl + "info/menu/info_menu/menu_best")
+            });
+        </script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/folarium/for.library.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/min/main.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/bootbox/bootbox.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/datatables/jquery.dataTables.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-select/bootstrap-select.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/slider/bootstrap-slider.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/highcharts.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/exporting.js"></script>
+    </body>
+</html>

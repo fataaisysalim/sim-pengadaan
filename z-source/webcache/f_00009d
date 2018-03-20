@@ -1,0 +1,292 @@
+<section class="panel panel-dark">
+    <header class="panel-heading"><i class="fa fa-list mg-r-md"></i> Data Saldo
+    </header>
+    <div class="panel-body" >
+        <div class="row">
+            <ul id="myTab2" class="nav nav-tabs nav-justified" style="margin-top: -15px;">
+                                                    <li class="active">
+                        <a href="#1" data-toggle="tab" style="text-transform: capitalize"><i class="fa fa-th-large mg-r-md"></i>Shift 1 <br/>( <b>pagi</b> 07:00 - 14:00)</a>
+                    </li>
+                                    <li >
+                        <a href="#2" data-toggle="tab" style="text-transform: capitalize"><i class="fa fa-th-large mg-r-md"></i>Shift 2 <br/>( <b>siang</b> 14:01 - 21:00)</a>
+                    </li>
+                            </ul>
+        </div>
+        <section class="panel row">
+            <div class="panel-body">
+                <div id="myTabContent2" class="tab-content">
+                                            <li class="tab-pane active" id="1">
+                            <div class="table-responsive no-border">
+                                <table class="table table-bordered table-striped mg-t datatable">
+                                    <thead class="bg-dark" style="color: white">
+                                        <tr>
+                                            <th class="text-center" style="min-width: 50px">No.</th>
+                                            <th class="text-center" style="min-width: 150px">Date</th>
+                                            <th class="text-center" style="min-width: 130px">Nominal</th>
+                                                                                            <th class="text-center" style="min-width: 50px"><i class=" fa fa-gears"></i></th>
+                                                                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                                                                                                                    <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>14 Desember 2015 </td>
+                                                    <td class="text-right">Rp 1.000.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="bcc0d400288793e8bdcd7c19a8ac0c2b" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>11 Desember 2015 </td>
+                                                    <td class="text-right">Rp 0</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="5e1b18c4c6a6d31695acbae3fd70ecc6" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>06 September 2015 </td>
+                                                    <td class="text-right">Rp 930.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="b1563a78ec59337587f6ab6397699afc" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">4</td>
+                                                    <td>05 September 2015 </td>
+                                                    <td class="text-right">Rp 501.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="5ec91aac30eae62f4140325d09b9afd0" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">5</td>
+                                                    <td>04 September 2015 </td>
+                                                    <td class="text-right">Rp 586.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="e555ebe0ce426f7f9b2bef0706315e0c" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">6</td>
+                                                    <td>03 September 2015 </td>
+                                                    <td class="text-right">Rp 760.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="db85e2590b6109813dafa101ceb2faeb" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">7</td>
+                                                    <td>02 September 2015 </td>
+                                                    <td class="text-right">Rp 516.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="a516a87cfcaef229b342c437fe2b95f7" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">8</td>
+                                                    <td>01 September 2015 </td>
+                                                    <td class="text-right">Rp 410.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="0584ce565c824b7b7f50282d9a19945b" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">9</td>
+                                                    <td>14 Juli 2015 </td>
+                                                    <td class="text-right">Rp 289.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="819f46e52c25763a55cc642422644317" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">10</td>
+                                                    <td>10 Juli 2015 </td>
+                                                    <td class="text-right">Rp 503.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="0e01938fc48a2cfb5f2217fbfb00722d" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">11</td>
+                                                    <td>09 Juli 2015 </td>
+                                                    <td class="text-right">Rp 200.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="0f49c89d1e7298bb9930789c8ed59d48" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">12</td>
+                                                    <td>07 Juli 2015 </td>
+                                                    <td class="text-right">Rp 929.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="c52f1bd66cc19d05628bd8bf27af3ad6" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">13</td>
+                                                    <td>03 Juli 2015 </td>
+                                                    <td class="text-right">Rp 402.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="7eabe3a1649ffa2b3ff8c02ebfd5659f" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">14</td>
+                                                    <td>02 Juli 2015 </td>
+                                                    <td class="text-right">Rp 0</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="e2c0be24560d78c5e599c2a9c9d0bbd2" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">15</td>
+                                                    <td>01 Juli 2015 </td>
+                                                    <td class="text-right">Rp 498.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="fc221309746013ac554571fbd180e1c8" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">16</td>
+                                                    <td>30 Juni 2015 </td>
+                                                    <td class="text-right">Rp 542.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="38af86134b65d0f10fe33d30dd76442e" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">17</td>
+                                                    <td>29 Juni 2015 </td>
+                                                    <td class="text-right">Rp 0</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="82161242827b703e6acf9c726942a1e4" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                                                        </tbody>
+                                </table>
+                            </div>
+                        </li>
+                                            <li class="tab-pane " id="2">
+                            <div class="table-responsive no-border">
+                                <table class="table table-bordered table-striped mg-t datatable">
+                                    <thead class="bg-dark" style="color: white">
+                                        <tr>
+                                            <th class="text-center" style="min-width: 50px">No.</th>
+                                            <th class="text-center" style="min-width: 150px">Date</th>
+                                            <th class="text-center" style="min-width: 130px">Nominal</th>
+                                                                                            <th class="text-center" style="min-width: 50px"><i class=" fa fa-gears"></i></th>
+                                                                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                                                                                                                    <tr>
+                                                    <td class="text-center">1</td>
+                                                    <td>06 September 2015 </td>
+                                                    <td class="text-right">Rp 2.105.398</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="26588e932c7ccfa1df309280702fe1b5" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">2</td>
+                                                    <td>03 September 2015 </td>
+                                                    <td class="text-right">Rp 500.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="c5ab0bc60ac7929182aadd08703f1ec6" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">3</td>
+                                                    <td>02 September 2015 </td>
+                                                    <td class="text-right">Rp 1.920.500</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="c399862d3b9d6b76c8436e924a68c45b" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">4</td>
+                                                    <td>10 Juli 2015 </td>
+                                                    <td class="text-right">Rp 0</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="48aedb8880cab8c45637abc7493ecddd" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">5</td>
+                                                    <td>09 Juli 2015 </td>
+                                                    <td class="text-right">Rp 575.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="6a9aeddfc689c1d0e3b9ccc3ab651bc5" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">6</td>
+                                                    <td>07 Juli 2015 </td>
+                                                    <td class="text-right">Rp 0</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="06138bc5af6023646ede0e1f7c1eac75" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">7</td>
+                                                    <td>03 Juli 2015 </td>
+                                                    <td class="text-right">Rp 0</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="69adc1e107f7f7d035d7baf04342e1ca" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">8</td>
+                                                    <td>02 Juli 2015 </td>
+                                                    <td class="text-right">Rp 2.271.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="854d6fae5ee42911677c739ee1734486" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">9</td>
+                                                    <td>29 Juni 2015 </td>
+                                                    <td class="text-right">Rp 1.058.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="f7e6c85504ce6e82442c770f7c8606f0" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">10</td>
+                                                    <td>28 Juni 2015 </td>
+                                                    <td class="text-right">Rp 1.044.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="1ff8a7b5dc7a7d1f0ed65aaa29c04b1e" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                            <tr>
+                                                    <td class="text-center">11</td>
+                                                    <td>25 Juni 2015 </td>
+                                                    <td class="text-right">Rp 878.000</td>
+                                                                                                            <td class="text-center">
+                                                            <a role="button" style="cursor: pointer" class="btn btn-default btn-xs edits" id="1d7f7abc18fcb43975065399b0d1e48e" data-toggle="tooltip" data-placement="left" title="" data-original-title="Edit menu" disabled><i class="fa fa-edit"></i><span class="mg-l-sm">Edit</span></a>
+                                                        </td>
+                                                                                                    </tr>
+                                                                                                                        </tbody>
+                                </table>
+                            </div>
+                        </li>
+                                    </div>
+            </div>
+        </section>
+    </div>
+</section>
+<script type="text/javascript">
+    $(".loadertab").hide();
+    $(".edits").click(function() {
+        $(this).each(function() {
+            $(".alert").hide('slow');
+            $("#saldoform").html('<div class="loader mg-t"><i class="fa fa-spin fa-refresh mg-r-md"></i>Loading data. Please wait... !</div>');
+            var id = $(this).attr('id');
+            $("#message").hide('slow');
+            $("#pesan").hide('slow');
+            $("#saldoform").load('http://192.168.1.4/forder-nasiudukpalagan/saldo/form/' + id);
+        });
+    });
+</script>
+<script src="http://192.168.1.4/forder-nasiudukpalagan/assets/js/datatables.js"></script>

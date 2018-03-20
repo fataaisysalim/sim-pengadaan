@@ -1,0 +1,358 @@
+
+<link rel="stylesheet" href="http://192.168.1.4/forder-nasiudukpalagan/assets/jquery-select2.min.css">
+<script src="http://192.168.1.4/forder-nasiudukpalagan/assets/jquery-select2/select2.min.js"></script>
+<div class="saving"></div>
+<section class="panel panel-dark">
+            <header class="panel-heading hidden-xs"><i class='fa fa-credit-card mg-r-sm'></i> Form Order</header>
+        <div class="panel-body">
+        <form action="http://192.168.1.4/forder-nasiudukpalagan/order/off" method="post" accept-charset="utf-8" id="form">                                <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label class="col-lg-3 col-md-3 col-sm-3 col-xs-12 pd-t-xs">No. Table</label>
+                            <div class="mg-b-md col-lg-9 col-md-9 col-sm-9 col-xs-12 form_meja">
+                                <div class="loader mg-t-md"><i class="fa fa-refresh fa-spin mg-r-md"></i>Update No. Table...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-md-3 col-sm-3 col-xs-12">Pelanggan</label>
+                                            <div class="mg-b-md col-lg-8 col-md-6 col-sm-9 col-xs-12">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                    <input type="text"  id="order_name" name="order_name" value="" class="form-control " placeholder="Nama Pelanggan">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-md-3 col-sm-3 col-xs-12">Jumlah Orang</label>
+                                            <div class="mg-b-md col-lg-4 col-md-4 col-xs-6 col-sm-3">
+                                                <input type="number"  id="qty_person" name="qty_person" onkeyup="format_num(this)" value="" class="form-control " placeholder="Jumlah">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <section class="panel">
+            <div class="panel-body row">
+                <div class="row">
+                    <table class="table table-bordered table-striped" style="margin-bottom: 0px">
+                        <thead class="bg-dark" style="color: white">
+                            <tr>
+                                <th class="text-center hidden-xs" style="min-width: 40px; padding: 15px">No.</th>
+                                <th class="text-center" style="min-width: 200px; padding: 15px">Menu/Item</th>
+                                <th class="text-center" style="width: 120px; padding: 15px">Qty</th>
+                                <th class="text-center hidden-xs" style="min-width: 250px; padding: 15px">Note</th>
+                                <th class="text-center" style="min-width: 30px; padding: 15px"><i class="fa fa-gear"></i></th>
+                                <th class="text-center" style="min-width: 30px; padding: 15px"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="show_row">
+                                                    </tbody>
+                    </table>
+                </div>
+                <button class="btn btn-lg btn-dark col-xs-12 mg-t-lg" style="margin-bottom: -15px" onclick="adds_row()" type="button"><i class="fa fa-plus"></i></button>
+            </div>
+        </section>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="hidden-lg">
+                    <b>Attention :</b>
+                    <ul>
+                        <li><i class="fa fa-chevron-circle-right mg-r-md"></i>Sebelum melakukan order, pastikan selalu refresh no.meja</li>
+                        <li><i class="fa fa-chevron-circle-right mg-r-md"></i>Pembatalan order dilakukan maksimal 10 menit setelah order</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <a href="http://192.168.1.4/forder-nasiudukpalagan/order" id="cancel" aria-hidden="true" data-dismiss="modal" class=" btn btn-lg btn-danger col-xs-12" ><i class="fa fa-times mg-r-sm"></i> Cancel </a>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                                <button disabled type="submit" id="order_" class="btn btn-lg btn-primary col-xs-12" ><i class="fa fa-check mg-r-sm"></i> Order</button>
+            </div>
+        </div>
+        </form>    </div>
+</section>
+<script type="text/javascript">
+    var now = "14-01-2016";
+    function menusa(id) {
+        if ($(".menusa_" + id + " option:selected").val() != "") {
+            $("#qty_" + id).val('1');
+        } else {
+            $("#qty_" + id).val('');
+        }
+        if ($(".menusa_1 option:selected").val() == "") {
+            $("#order_").attr('disabled');
+        } else {
+            $("#order_").removeAttr('disabled');
+        }
+    }
+    ;
+    adds_row();
+    adds_row();
+    $(".modal-title").html("<a href='#' class='info_order btn btn-sm btn-danger mg-r-sm' data-toggle='modal' data-target='.bs-modal-lg'><i class='fa fa-reply'></i></a>Edit Order No. ");
+    $(".form_meja").load('http://192.168.1.4/forder-nasiudukpalagan/order/table/').show();
+    $(".loadertabo").hide();
+
+    $("#form").submit(function() {
+        $("#order_").attr("disabled", "disabled");
+        var err = 0;
+        if (err > 0) {
+            return false;
+        }
+        if ($("#no_meja").val() == "") {
+            bootbox.alert("No Meja tidak boleh kosong");
+            $("#no_meja").focus();
+            $("#order_").removeAttr("disabled", "disabled");
+            return false;
+        }
+
+        var jml_menu_ = $('.row_out').length;
+        for (var e = 1; e <= jml_menu_; e++) {
+            var menu = $("#menu_" + e + " option:selected").val();
+            var qty = $("#qty_" + e).val();
+            var note = $("#note_" + e).val();
+            if (menu != '' && qty == '') {
+                bootbox.alert("Jumlah menu dipesan tidak boleh kosong");
+                $("#qty_" + e).focus();
+                $("#order_").removeAttr("disabled", "disabled");
+                return false;
+            }
+
+            if (menu == '' && qty != '') {
+                bootbox.alert("Menu dipesan tidak boleh kosong");
+                $("#menu_" + e).focus();
+                $("#order_").removeAttr("disabled", "disabled");
+                return false;
+            }
+
+            if ($(".menusa_1 option:selected").val() == '' && $("#qty_1").val() == '') {
+                bootbox.alert("Menu dan jumlah menu dipesan tidak boleh kosong");
+                $("#menu_" + e).focus();
+                $("#order_").removeAttr("disabled", "disabled");
+                return false;
+            }
+        }
+        $(".loadertabo1").show();
+        $('input').attr('readonly', 'readonly');
+        $('select').attr('readonly', 'disabled');
+        $('textarea').attr('readonly', 'readonly');
+        $.ajax({
+            url: $("#form").attr('action'),
+            data: $("#form").serialize(),
+            type: "POST",
+            dataType: "JSON",
+            success: function(json) {
+                if (json.status == 0) {
+                    $(".saving").html(json.msg_dt);
+                    $('input').removeAttr('readonly', 'readonly');
+                    $('select').removeAttr('readonly', 'readonly');
+                    $('textarea').removeAttr('readonly', 'readonly');
+                    $(".loadertabo1").hide();
+                    $("#order_").removeAttr("disabled", "disabled");
+                } else if (json.status == 1) {
+                    $(".saving").html(' ');
+                    $(".loadertabo1").hide();
+                    id = json.menu_order_id;
+                    bootbox.confirm("<i class='fa fa-info-circle mg-r-md'></i>Order berhasil dilakukan. Tekan 'YES' untuk mencetak order", function(result) {
+                        if (result == true) {
+                            setInterval(window.location.replace("http://192.168.1.4/forder-nasiudukpalagan/order"), 3500);
+                            $.post("http://192.168.1.4/forder-nasiudukpalagan/print-order/" + id, "json");
+                        } else {
+                            setInterval(window.location.replace("http://192.168.1.4/forder-nasiudukpalagan/order"), 2000);
+                        }
+                    });
+                    $('#cancel').attr('disabled', 'disabled');
+                }
+            }
+        });
+        return false;
+    });
+
+    function adds_row() {
+        var counterss = $('.row_tam').length + 1;
+        var counter = $('.row_out').length + 1;
+        for (var a = counter; a >= counterss; a--) {
+            var rz = a + 1;
+            $(".nom_" + a).html(rz);
+            $(".nom_" + a).attr('class', "nom_" + rz);
+            $("#menu_select_" + a).attr('id', "menu_select_" + rz);
+            $("#btn_" + a).attr('onclick', "cut(this, " + rz + ")");
+            $("#menu_" + a).attr('onchange', "menusa(" + rz + ")");
+            $("#menu_" + a).attr('id', "menu_" + rz);
+            $("#btn_" + a).attr('id', "btn_" + rz);
+            $("#qty_" + a).attr('onkeyup', "calcPay(this, " + rz + ")");
+            $("#qty_" + a).attr('id', "qty_" + rz);
+
+        }
+
+        var baris = '<tr class="row_out row_tam">'
+            + '<td class="text-center hidden-xs"><p class="nom_' + counter + '">' + counter + '</p></td>'
+            + '<input type="hidden" name="action[]" value="add" class="form-control">'
+            + '<td id="menu_select_' + counter + '"></td>'
+            + '<td>'
+            + '<input type="number" maxlength="5" min="1" id="qty_' + counter + '" class=" form-control " onkeyup="format_num(this)" name="qty_menu[]" value="" class="form-control" placeholder="Qty. Max 5 Digit">'
+            + '</td>'
+            + '<td class="hidden-xs">'
+            + '<input type="text" maxlength="30" id="note_' + counter + '" name="note_menu[]" value="" class="form-control" placeholder="Note. Max 30 Character">'
+            + '</td>'
+            + '<td class="text-center">'
+            + '<button type="button" class="btn btn-primary" id="btn2_' + counter + '" onclick="take(this, ' + counter + ')"><i class="fa fa-thumbs-up"></i></button>'
+            + '<button style="display: none;" type="button" class="btn btn-success" id="btn3_' + counter + '" onclick="eat(this, ' + counter + ')"><i class="fa fa-thumbs-up"></i></button>'
+            + '</td>'
+            + '<td class="text-center">'
+            + '<button type="button" class="btn btn-danger " id="btn_' + counter + '" onclick="cut(this, ' + counter + ')"><i class="fa fa-times"></i></button>'
+            + '</td>'
+            + '</tr>';
+
+        $('#show_row').append(baris);
+        $('#menu_select_' + counter).load("http://192.168.1.4/forder-nasiudukpalagan/payments/get-menu/" + counter);
+    }
+    $(".batal").click(function() {
+        $(this).each(function() {
+            $(".alert").hide();
+            $("#pesan").hide();
+            id = $(this).attr('id');
+            id_mo = $(this).attr('id_mo');
+            bootbox.confirm("Yakin Batalkan Menu?", function(result) {
+                if (result == true) {
+                    $(".loadertabo").show();
+                    $.ajax({
+                        url: "http://192.168.1.4/forder-nasiudukpalagan/order/update-status/cancel/" + id,
+                        dataType: "JSON",
+                        success: function(json) {
+                            if (json.status == 1) {
+                                $("#modal-contents").load("http://192.168.1.4/forder-nasiudukpalagan/info/order/edit/" + id_mo);
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    });
+    $(".jadi").click(function() {
+        $(this).each(function() {
+            $(".alert").hide();
+            $("#pesan").hide();
+            id = $(this).attr('id');
+            id_mo = $(this).attr('id_mo');
+            bootbox.confirm("Pesanan akan diaktifkan kembali?", function(result) {
+                if (result == true) {
+                    $(".loadertabo").show();
+                    $.ajax({
+                        url: "http://192.168.1.4/forder-nasiudukpalagan/order/update-status/uncancel/" + id,
+                        dataType: "JSON",
+                        success: function(json) {
+                            if (json.status == 1) {
+                                $("#modal-contents").load("http://192.168.1.4/forder-nasiudukpalagan/info/order/edit/" + id_mo);
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    });
+    $(".antar").click(function() {
+        $(this).each(function() {
+            $(".alert").hide();
+            $("#pesan").hide();
+            id = $(this).attr('id');
+            id_mo = $(this).attr('id_mo');
+            bootbox.confirm("Pesanan sudah diantarkan?", function(result) {
+                if (result == true) {
+                    $(".loadertabo").show();
+                    $.ajax({
+                        url: "http://192.168.1.4/forder-nasiudukpalagan/order/update-status/delivered/" + id,
+                        dataType: "JSON",
+                        success: function(json) {
+                            if (json.status == 1) {
+                                $("#modal-contents").load("http://192.168.1.4/forder-nasiudukpalagan/info/order/edit/" + id_mo);
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    $(".b_antar").click(function() {
+        $(this).each(function() {
+            $(".alert").hide();
+            $("#pesan").hide();
+            id = $(this).attr('id');
+            id_mo = $(this).attr('id_mo');
+            bootbox.confirm("Pesanan belum diantarkan?", function(result) {
+                if (result == true) {
+                    $(".loadertabo").show();
+                    $.ajax({
+                        url: "http://192.168.1.4/forder-nasiudukpalagan/order/update-status/undeliver/" + id,
+                        dataType: "JSON",
+                        success: function(json) {
+                            if (json.status == 1) {
+                                $("#modal-contents").load("http://192.168.1.4/forder-nasiudukpalagan/info/order/edit/" + id_mo);
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    function cut(el, i) {
+        var rowx = $('.row_out').length;
+        for (var a = i; a < rowx; a++) {
+            var rz = a + 1;
+            $(".nom_" + rz).html(a);
+            $(".nom_" + rz).attr('class', "nom_" + a);
+            $("#menu_select_" + a).attr('id', "menu_select_" + a);
+            $("#btn_" + rz).attr('onclick', "cut(this, " + a + ")");
+            $("#menu_" + rz).attr('onchange', "menusa(" + a + ")");
+            $("#menu_" + rz).attr('id', "menu_" + a);
+            $("#note_" + rz).attr('id', "note_" + a);
+            $("#btn_" + rz).attr('id', "btn_" + a);
+            $("#qty_" + rz).attr('onkeyup', "calcPay(this, " + a + ")");
+            $("#qty_" + rz).attr('id', "qty_" + a);
+        }
+        var parent = el.parentNode.parentNode;
+        parent.parentNode.removeChild(parent);
+    }
+        
+    function take(el, i) {
+        var note = $("#note_" + i).val();
+        $("#note_" + i).val('(Bungkus) ' + note);
+        $("#btn2_" + i).attr('style', 'display: none;');
+        $("#btn3_" + i).attr('style', 'display: block;');
+    }
+
+    function eat(el, i) {
+        var note = $("#note_" + i).val();
+        var explode = note.split("(Bungkus) ");
+            
+        $("#note_" + i).val(explode[1]);
+        $("#btn2_" + i).attr('style', 'display: block;');
+        $("#btn3_" + i).attr('style', 'display: none;');
+    }
+
+    function form_check(isian) {
+        var err = 0;
+        if (err > 0) {
+            return false;
+        }
+        if (isian.order_name.value == "") {
+            alert("Nama pemesan tidak boleh kosong");
+            isian.order_name.focus();
+            return false;
+        }
+    }
+</script>

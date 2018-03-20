@@ -1,0 +1,11 @@
+Work Order 
+- word_order_extra
+  jika 0 (nol) maka tidak ada pekerjaan tambah kurang
+  jika 1 (satu) maka terdapat pekerjaan tambah (biaya tambahan)
+  jika 2 (dua) maka terdapat pekerajaan kurang (biaya kurang)
+- work_order_status 
+  jika 0 maka projek / pengadaan belum selesai
+  jika 1 maka projek sudah dinyatakan selesai / ditutup (misalnya)
+
+ini hanya catatan dari sigit prasetyo 
+apabila kurang benar / salah silahkan dibenarkan dan saya diberitahu agar sama sama enak

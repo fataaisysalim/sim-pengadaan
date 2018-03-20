@@ -1,0 +1,697 @@
+- 05:17:09.015 INFO: --------------------------------------------------------
+- 05:17:09.015 INFO: Started application
+- 05:17:09.015 INFO: Logging to: E:\xampp\htdocs\forder\z-source\debug.log
+- 05:17:09.015 INFO: Log level = DEBUG4
+- 05:17:09.015 INFO: Starting Mongoose 3.9c web server
+- 05:17:09.015 INFO: WWW directory: E:\xampp\htdocs\forder\z-source\application
+- 05:17:09.015 INFO: Index files: index.html,index.php
+- 05:17:09.015 INFO: CGI interpreter: E:\xampp\htdocs\forder\z-source\application\libraries\php-cgi.exe
+- 05:17:09.015 INFO: CGI pattern: **.php$
+- 05:17:09.015 INFO: CGI environment variables set: TMP=C:\Users\Folarium\AppData\Local\Temp\,TEMP=C:\Users\Folarium\AppData\Local\Temp\,TMPDIR=C:\Users\Folarium\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 05:17:09.015 INFO: Web server url: http://127.0.0.1:60235/
+- 05:17:09.015 INFO: remote_debugging_port = 52642
+- 05:17:09.015 DEBUG: Command line string for the browser process: "E:\xampp\htdocs\forder\z-source\setup.exe" --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" --remote-debugging-port=52642 --no-sandbox
+- 05:17:09.047 DEBUG: App::OnContextInitialized()
+- 05:17:09.047 DEBUG: Window max width/height = 1200/946
+- 05:17:09.047 DEBUG: GetBrowserWindow(): not found, hwnd = 198946
+- 05:17:09.047 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 05:17:09.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 05:17:09.047 DEBUG: StoreBrowserWindow(): hwnd = 198946
+- 05:17:09.125 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 05:17:09.156 DEBUG: ClientHandler::OnAfterCreated()
+- 05:17:09.156 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 05:17:09.187 INFO: DPI, ppix = 96, ppiy = 96
+- 05:17:09.187 INFO: DPI, browser zoom level = 0
+- 05:17:09.000 DEBUG: Command line string for the gpu-process process: "E:\xampp\htdocs\forder\z-source\setup.exe" --type=gpu-process --channel="5244.0.127654380\1958024180" --no-sandbox --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,12,22 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x29b2 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2697 --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" /prefetch:822062411
+- 05:17:09.250 DEBUG: OnLoadingStateChange: loading=1, url=
+- 05:17:09.015 DEBUG: Command line string for the renderer process: "E:\xampp\htdocs\forder\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel="5244.1.1066018979\902709666" /prefetch:673131151
+- 05:17:09.031 DEBUG: OnBrowserCreated()
+- 05:17:09.047 DEBUG: renderer[1] OnProcessMessageReceived: SetIsFullscreen
+[0118/051709:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0118/051709:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0118/051709:ERROR:cache_util.cc(104)] Unable to move cache folder E:\xampp\htdocs\forder\z-source\webcache to E:\xampp\htdocs\forder\z-source\old_webcache_000
+[0118/051709:ERROR:cache_creator.cc(115)] Unable to create cache
+- 05:17:10.375 DEBUG: OnContextCreated()
+- 05:17:10.703 INFO: GET 200 /
+- 05:17:10.703 INFO: GET 200 /assets/favicon.png
+- 05:17:10.703 INFO: GET 200 /assets/bootstrap/css/bootstrap.min.css
+- 05:17:10.718 INFO: GET 200 /assets/min/main.min.js
+- 05:17:10.718 INFO: GET 200 /assets/min/main.min.css
+[0118/051711:INFO:CONSOLE(272)] "Uncaught ReferenceError: Modernizr is not defined", source: http://127.0.0.1:60235/assets/min/main.min.js (272)
+- 05:17:11.000 INFO: GET 200 /assets/fonts/fontawesome-webfont.woff?v=4.0.3
+- 05:17:11.531 INFO: GET 200 /assets/bg.jpg
+- 05:17:11.828 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60235/
+- 05:17:12.687 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60235/
+- 05:17:13.547 DEBUG: OnContextCreated()
+- 05:17:15.984 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/login/verify/45acdf0aed5d3080f9348ecba29f0370
+- 05:17:19.437 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/login/verify/45acdf0aed5d3080f9348ecba29f0370
+- 05:17:19.406 DEBUG: OnContextCreated()
+- 05:17:19.734 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/login/verify/45acdf0aed5d3080f9348ecba29f0370
+- 05:17:19.750 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/login/verify/45acdf0aed5d3080f9348ecba29f0370
+- 05:17:20.078 DEBUG: OnContextCreated()
+- 05:17:22.500 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/home
+[0118/051723:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+- 05:17:41.765 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/home
+- 05:17:42.687 DEBUG: OnContextCreated()
+- 05:17:42.718 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/cashier
+- 05:17:46.875 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/cashier
+- 05:17:47.844 DEBUG: OnContextCreated()
+- 05:17:48.968 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/order
+- 05:17:48.687 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/order
+- 05:17:48.437 DEBUG: OnContextCreated()
+- 05:17:49.140 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/home
+[0118/051749:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+- 05:18:43.843 DEBUG: F5 pressed, reloading page
+- 05:18:43.843 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/home
+- 05:18:44.640 DEBUG: OnContextCreated()
+- 05:18:44.625 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/home
+[0118/051850:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+- 05:19:28.234 DEBUG: WM_DESTROY
+- 05:19:28.234 DEBUG: RemoveBrowserWindow(): hwnd = 198946
+- 05:19:28.234 INFO: Stopping Mongoose web server
+- 05:19:28.234 DEBUG: Mongoose webserver stopped immediately
+- 05:19:28.234 DEBUG: RemoveBrowserWindow(): hwnd = 198942
+- 05:19:28.234 DEBUG: GetBrowserWindow(): not found, hwnd = 198942
+- 05:19:28.234 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 05:19:28.984 DEBUG: OnBrowserDestroyed()
+- 05:19:28.343 INFO: Ended application
+- 05:19:28.343 INFO: --------------------------------------------------------
+- 20:21:34.031 INFO: --------------------------------------------------------
+- 20:21:34.047 INFO: Started application
+- 20:21:34.047 INFO: Logging to: E:\xampp\htdocs\forder\z-source\debug.log
+- 20:21:34.047 INFO: Log level = DEBUG4
+- 20:21:34.047 INFO: Starting Mongoose 3.9c web server
+- 20:21:34.047 INFO: WWW directory: E:\xampp\htdocs\forder\z-source\application
+- 20:21:34.047 INFO: Index files: index.html,index.php
+- 20:21:34.047 INFO: CGI interpreter: E:\xampp\htdocs\forder\z-source\application\libraries\php-cgi.exe
+- 20:21:34.047 INFO: CGI pattern: **.php$
+- 20:21:34.047 INFO: CGI environment variables set: TMP=C:\Users\Folarium\AppData\Local\Temp\,TEMP=C:\Users\Folarium\AppData\Local\Temp\,TMPDIR=C:\Users\Folarium\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 20:21:34.047 INFO: Web server url: http://127.0.0.1:3914/
+- 20:21:34.047 INFO: remote_debugging_port = 62817
+- 20:21:34.047 DEBUG: Command line string for the browser process: "E:\xampp\htdocs\forder\z-source\setup.exe" --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" --remote-debugging-port=62817 --no-sandbox
+- 20:21:35.687 DEBUG: App::OnContextInitialized()
+- 20:21:35.703 DEBUG: Window max width/height = 1200/946
+- 20:21:35.703 DEBUG: GetBrowserWindow(): not found, hwnd = 393808
+- 20:21:35.703 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 20:21:35.703 DEBUG: BrowserWindow::CreateBrowserControl()
+- 20:21:35.703 DEBUG: StoreBrowserWindow(): hwnd = 393808
+- 20:21:35.750 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 20:21:35.797 DEBUG: ClientHandler::OnAfterCreated()
+- 20:21:35.797 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 20:21:35.797 INFO: DPI, ppix = 96, ppiy = 96
+- 20:21:35.797 INFO: DPI, browser zoom level = 0
+- 20:21:35.859 DEBUG: OnLoadingStateChange: loading=1, url=
+- 20:21:35.000 DEBUG: Command line string for the gpu-process process: "E:\xampp\htdocs\forder\z-source\setup.exe" --type=gpu-process --channel="3256.0.2118346323\691466265" --no-sandbox --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,12,22 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x29b2 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2697 --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" /prefetch:822062411
+- 20:21:35.000 DEBUG: Command line string for the renderer process: "E:\xampp\htdocs\forder\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="E:\xampp\htdocs\forder\z-source\debug.log" --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel="3256.1.1148799245\1912797195" /prefetch:673131151
+- 20:21:37.250 DEBUG: OnBrowserCreated()
+- 20:21:37.266 DEBUG: renderer[1] OnProcessMessageReceived: SetIsFullscreen
+[0118/202137:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0118/202137:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0118/202137:ERROR:cache_util.cc(104)] Unable to move cache folder E:\xampp\htdocs\forder\z-source\webcache to E:\xampp\htdocs\forder\z-source\old_webcache_000
+[0118/202137:ERROR:cache_creator.cc(115)] Unable to create cache
+- 20:21:41.765 INFO: GET 200 /
+- 20:21:41.797 DEBUG: OnContextCreated()
+- 20:21:41.890 INFO: GET 200 /assets/favicon.png
+- 20:21:41.906 INFO: GET 200 /assets/bootstrap/css/bootstrap.min.css
+- 20:21:41.969 INFO: GET 200 /assets/min/main.min.css
+- 20:21:41.015 INFO: GET 200 /assets/min/main.min.js
+[0118/202142:INFO:CONSOLE(272)] "Uncaught ReferenceError: Modernizr is not defined", source: http://127.0.0.1:3914/assets/min/main.min.js (272)
+- 20:21:42.515 INFO: GET 200 /assets/fonts/fontawesome-webfont.woff?v=4.0.3
+- 20:21:43.125 INFO: GET 200 /assets/bg.jpg
+- 20:21:43.281 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:3914/
+- 20:21:46.937 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:3914/
+- 20:21:47.016 DEBUG: OnContextCreated()
+- 20:21:47.062 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/login/verify/45acdf0aed5d3080f9348ecba29f0370
+- 20:21:47.062 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/login/verify/45acdf0aed5d3080f9348ecba29f0370
+- 20:21:48.375 DEBUG: OnContextCreated()
+- 20:21:49.797 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/home
+[0118/202152:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+- 20:22:53.703 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/home
+- 20:22:53.953 DEBUG: OnContextCreated()
+- 20:22:54.875 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/apps/profile
+[0118/202329:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+- 20:23:29.578 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/forder/apps/profile
+- 20:23:29.938 DEBUG: OnContextCreated()
+- 20:23:30.578 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/forder/apps/profile
+[0118/202334:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+- 00:33:19.703 DEBUG: WM_DESTROY
+- 00:33:19.703 DEBUG: RemoveBrowserWindow(): hwnd = 393808
+- 00:33:19.703 INFO: Stopping Mongoose web server
+- 00:33:19.703 DEBUG: Mongoose webserver stopped immediately
+- 00:33:19.703 DEBUG: RemoveBrowserWindow(): hwnd = 328912
+- 00:33:19.703 DEBUG: GetBrowserWindow(): not found, hwnd = 328912
+- 00:33:19.703 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 00:33:20.359 DEBUG: OnBrowserDestroyed()
+- 00:33:20.515 INFO: Ended application
+- 00:33:20.515 INFO: --------------------------------------------------------
+- 01:41:15.079 INFO: --------------------------------------------------------
+- 01:41:15.079 INFO: Started application
+- 01:41:15.079 INFO: Logging to: E:\xampp\htdocs\wika\z-source\debug.log
+- 01:41:15.079 INFO: Log level = DEBUG4
+- 01:41:15.094 INFO: Starting Mongoose 3.9c web server
+- 01:41:15.094 INFO: WWW directory: E:\xampp\htdocs\wika\z-source\application
+- 01:41:15.094 INFO: Index files: index.html,index.php
+- 01:41:15.094 INFO: CGI interpreter: E:\xampp\htdocs\wika\z-source\application\libraries\php-cgi.exe
+- 01:41:15.094 INFO: CGI pattern: **.php$
+- 01:41:15.094 INFO: CGI environment variables set: TMP=C:\Users\Folarium\AppData\Local\Temp\,TEMP=C:\Users\Folarium\AppData\Local\Temp\,TMPDIR=C:\Users\Folarium\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 01:41:15.094 INFO: Web server url: http://127.0.0.1:11852/
+- 01:41:15.110 INFO: remote_debugging_port = 61814
+- 01:41:15.204 DEBUG: Command line string for the browser process: "E:\xampp\htdocs\wika\z-source\setup.exe" --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --remote-debugging-port=61814 --no-sandbox
+- 01:41:17.438 DEBUG: App::OnContextInitialized()
+- 01:41:17.438 DEBUG: Window max width/height = 1200/946
+- 01:41:17.438 DEBUG: GetBrowserWindow(): not found, hwnd = 2033154
+- 01:41:17.438 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 01:41:17.438 DEBUG: BrowserWindow::CreateBrowserControl()
+- 01:41:17.438 DEBUG: StoreBrowserWindow(): hwnd = 2033154
+- 01:41:17.469 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 01:41:17.000 DEBUG: Command line string for the gpu-process process: "E:\xampp\htdocs\wika\z-source\setup.exe" --type=gpu-process --channel="5724.0.1058942837\1570707274" --no-sandbox --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,12,22 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x29b2 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2697 --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" /prefetch:822062411
+- 01:41:17.829 DEBUG: ClientHandler::OnAfterCreated()
+- 01:41:17.829 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 01:41:17.891 INFO: DPI, ppix = 96, ppiy = 96
+- 01:41:17.891 INFO: DPI, browser zoom level = 0
+- 01:41:17.157 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:41:17.000 DEBUG: Command line string for the renderer process: "E:\xampp\htdocs\wika\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel="5724.1.1278237409\1575473784" /prefetch:673131151
+- 01:41:19.703 DEBUG: OnBrowserCreated()
+- 01:41:19.016 DEBUG: renderer[1] OnProcessMessageReceived: SetIsFullscreen
+[0119/014120:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0119/014120:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0119/014120:ERROR:cache_util.cc(104)] Unable to move cache folder E:\xampp\htdocs\wika\z-source\webcache to E:\xampp\htdocs\wika\z-source\old_webcache_000
+[0119/014120:ERROR:cache_creator.cc(115)] Unable to create cache
+- 01:41:22.188 INFO: GET 200 /
+- 01:41:23.313 DEBUG: OnContextCreated()
+- 01:41:23.594 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:11852/
+- 01:41:32.875 DEBUG: WM_DESTROY
+- 01:41:32.875 DEBUG: RemoveBrowserWindow(): hwnd = 2033154
+- 01:41:32.875 INFO: Stopping Mongoose web server
+- 01:41:32.875 DEBUG: Mongoose webserver stopped immediately
+- 01:41:32.875 DEBUG: RemoveBrowserWindow(): hwnd = 853236
+- 01:41:32.875 DEBUG: GetBrowserWindow(): not found, hwnd = 853236
+- 01:41:32.875 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 01:41:33.297 INFO: Ended application
+- 01:41:33.297 INFO: --------------------------------------------------------
+- 01:43:01.000 INFO: --------------------------------------------------------
+- 01:43:01.000 INFO: Started application
+- 01:43:01.000 INFO: Logging to: E:\xampp\htdocs\wika\z-source\debug.log
+- 01:43:01.000 INFO: Log level = DEBUG4
+- 01:43:01.000 INFO: Starting Mongoose 3.9c web server
+- 01:43:01.000 INFO: WWW directory: E:\xampp\htdocs\wika\z-source\application
+- 01:43:01.000 INFO: Index files: index.html,index.php
+- 01:43:01.000 INFO: CGI interpreter: E:\xampp\htdocs\wika\z-source\application\libraries\php-cgi.exe
+- 01:43:01.000 INFO: CGI pattern: **.php$
+- 01:43:01.000 INFO: CGI environment variables set: TMP=C:\Users\Folarium\AppData\Local\Temp\,TEMP=C:\Users\Folarium\AppData\Local\Temp\,TMPDIR=C:\Users\Folarium\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 01:43:01.000 INFO: Web server url: http://127.0.0.1:11950/
+- 01:43:01.016 INFO: remote_debugging_port = 54091
+- 01:43:01.016 DEBUG: Command line string for the browser process: "E:\xampp\htdocs\wika\z-source\setup.exe" --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --remote-debugging-port=54091 --no-sandbox
+- 01:43:02.047 DEBUG: App::OnContextInitialized()
+- 01:43:02.047 DEBUG: Window max width/height = 1200/946
+- 01:43:02.047 DEBUG: GetBrowserWindow(): not found, hwnd = 3539942
+- 01:43:02.047 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 01:43:02.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 01:43:02.047 DEBUG: StoreBrowserWindow(): hwnd = 3539942
+- 01:43:02.125 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 01:43:02.172 DEBUG: ClientHandler::OnAfterCreated()
+- 01:43:02.172 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 01:43:02.172 INFO: DPI, ppix = 96, ppiy = 96
+- 01:43:02.172 INFO: DPI, browser zoom level = 0
+- 01:43:02.172 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:43:02.016 DEBUG: Command line string for the gpu-process process: "E:\xampp\htdocs\wika\z-source\setup.exe" --type=gpu-process --channel="1844.0.1650524626\1808297078" --no-sandbox --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,12,22 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x29b2 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2697 --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" /prefetch:822062411
+- 01:43:02.000 DEBUG: Command line string for the renderer process: "E:\xampp\htdocs\wika\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel="1844.1.688460139\692889243" /prefetch:673131151
+- 01:43:02.031 DEBUG: OnBrowserCreated()
+[0119/014302:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0119/014302:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0119/014302:ERROR:cache_util.cc(104)] Unable to move cache folder E:\xampp\htdocs\wika\z-source\webcache to E:\xampp\htdocs\wika\z-source\old_webcache_000
+[0119/014302:ERROR:cache_creator.cc(115)] Unable to create cache
+- 01:43:03.500 INFO: GET 302 /
+- 01:43:03.391 DEBUG: OnContextCreated()
+[0119/014309:INFO:CONSOLE(77)] "Uncaught TypeError: Object [object Object] has no method 'carouFredSel'", source: http://localhost/wika/assets/logflat/js/main_1.js (77)
+- 01:43:09.078 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/
+- 01:43:13.110 DEBUG: F5 pressed, reloading page
+- 01:43:13.110 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/
+- 01:43:13.094 DEBUG: OnContextCreated()
+[0119/014313:INFO:CONSOLE(77)] "Uncaught TypeError: Object [object Object] has no method 'carouFredSel'", source: http://localhost/wika/assets/logflat/js/main_1.js (77)
+- 01:43:13.891 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/
+- 01:43:40.688 DEBUG: WM_DESTROY
+- 01:43:40.688 DEBUG: RemoveBrowserWindow(): hwnd = 3539942
+- 01:43:40.688 INFO: Stopping Mongoose web server
+- 01:43:40.688 DEBUG: Mongoose webserver stopped immediately
+- 01:43:40.688 DEBUG: RemoveBrowserWindow(): hwnd = 1901930
+- 01:43:40.688 DEBUG: GetBrowserWindow(): not found, hwnd = 1901930
+- 01:43:40.688 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 01:43:40.797 INFO: Ended application
+- 01:43:40.797 INFO: --------------------------------------------------------
+- 01:43:40.563 DEBUG: OnBrowserDestroyed()
+- 01:43:43.000 INFO: --------------------------------------------------------
+- 01:43:43.000 INFO: Started application
+- 01:43:43.000 INFO: Logging to: E:\xampp\htdocs\wika\z-source\debug.log
+- 01:43:43.000 INFO: Log level = DEBUG4
+- 01:43:43.000 INFO: Starting Mongoose 3.9c web server
+- 01:43:43.000 INFO: WWW directory: E:\xampp\htdocs\wika\z-source\application
+- 01:43:43.000 INFO: Index files: index.html,index.php
+- 01:43:43.000 INFO: CGI interpreter: E:\xampp\htdocs\wika\z-source\application\libraries\php-cgi.exe
+- 01:43:43.000 INFO: CGI pattern: **.php$
+- 01:43:43.000 INFO: CGI environment variables set: TMP=C:\Users\Folarium\AppData\Local\Temp\,TEMP=C:\Users\Folarium\AppData\Local\Temp\,TMPDIR=C:\Users\Folarium\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 01:43:43.000 INFO: Web server url: http://127.0.0.1:11970/
+- 01:43:43.000 INFO: remote_debugging_port = 57710
+- 01:43:43.000 DEBUG: Command line string for the browser process: "E:\xampp\htdocs\wika\z-source\setup.exe" --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --remote-debugging-port=57710 --no-sandbox
+- 01:43:43.031 DEBUG: App::OnContextInitialized()
+- 01:43:43.031 DEBUG: Window max width/height = 1200/946
+- 01:43:43.031 DEBUG: GetBrowserWindow(): not found, hwnd = 3867824
+- 01:43:43.031 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 01:43:43.047 DEBUG: BrowserWindow::CreateBrowserControl()
+- 01:43:43.047 DEBUG: StoreBrowserWindow(): hwnd = 3867824
+- 01:43:43.078 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 01:43:43.109 DEBUG: ClientHandler::OnAfterCreated()
+- 01:43:43.109 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 01:43:43.109 INFO: DPI, ppix = 96, ppiy = 96
+- 01:43:43.109 INFO: DPI, browser zoom level = 0
+- 01:43:43.125 DEBUG: OnLoadingStateChange: loading=1, url=
+- 01:43:43.000 DEBUG: Command line string for the gpu-process process: "E:\xampp\htdocs\wika\z-source\setup.exe" --type=gpu-process --channel="3456.0.1866859473\903771333" --no-sandbox --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,12,22 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x29b2 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2697 --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" /prefetch:822062411
+- 01:43:43.000 DEBUG: Command line string for the renderer process: "E:\xampp\htdocs\wika\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="E:\xampp\htdocs\wika\z-source\debug.log" --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel="3456.1.1688112739\1452919688" /prefetch:673131151
+- 01:43:43.016 DEBUG: OnBrowserCreated()
+[0119/014343:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0119/014343:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0119/014343:ERROR:cache_util.cc(104)] Unable to move cache folder E:\xampp\htdocs\wika\z-source\webcache to E:\xampp\htdocs\wika\z-source\old_webcache_000
+[0119/014343:ERROR:cache_creator.cc(115)] Unable to create cache
+- 01:43:44.391 INFO: GET 302 /
+- 01:43:44.328 DEBUG: OnContextCreated()
+[0119/014345:INFO:CONSOLE(77)] "Uncaught TypeError: Object [object Object] has no method 'carouFredSel'", source: http://localhost/wika/assets/logflat/js/main_1.js (77)
+- 01:43:45.172 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/
+- 01:44:34.844 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/
+- 01:44:35.187 DEBUG: OnContextCreated()
+[0119/014435:INFO:CONSOLE(77)] "Uncaught TypeError: Object [object Object] has no method 'carouFredSel'", source: http://localhost/wika/assets/logflat/js/main_1.js (77)
+- 01:44:35.547 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/
+- 01:45:05.547 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/
+- 01:45:06.109 DEBUG: OnContextCreated()
+- 01:45:06.375 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/login
+- 01:45:06.391 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/login
+- 01:45:06.547 DEBUG: OnContextCreated()
+- 01:45:08.422 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0119/014539:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+- 01:45:43.922 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 01:45:43.781 DEBUG: OnContextCreated()
+- 01:45:43.422 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard/menu_access
+- 01:46:09.094 DEBUG: WM_DESTROY
+- 01:46:09.094 DEBUG: RemoveBrowserWindow(): hwnd = 3867824
+- 01:46:09.094 INFO: Stopping Mongoose web server
+- 01:46:09.094 DEBUG: Mongoose webserver stopped immediately
+- 01:46:09.094 DEBUG: RemoveBrowserWindow(): hwnd = 1574472
+- 01:46:09.094 DEBUG: GetBrowserWindow(): not found, hwnd = 1574472
+- 01:46:09.094 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 01:46:09.156 INFO: Ended application
+- 01:46:09.156 INFO: --------------------------------------------------------
+- 01:46:09.969 DEBUG: OnBrowserDestroyed()
+- 00:15:14.094 INFO: --------------------------------------------------------
+- 00:15:14.109 INFO: Started application
+- 00:15:14.109 INFO: Logging to: F:\xampp\htdocs\wika\z-source\debug.log
+- 00:15:14.109 INFO: Log level = DEBUG4
+- 00:15:14.109 INFO: Starting Mongoose 3.9c web server
+- 00:15:14.109 INFO: WWW directory: F:\xampp\htdocs\wika\z-source\application
+- 00:15:14.109 INFO: Index files: index.html,index.php
+- 00:15:14.109 INFO: CGI interpreter: F:\xampp\htdocs\wika\z-source\application\libraries\php-cgi.exe
+- 00:15:14.109 INFO: CGI pattern: **.php$
+- 00:15:14.109 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\FOLARI~1\AppData\Local\Temp\
+- 00:15:14.125 INFO: CGI environment variables set: TMP=C:\WINDOWS\Temp,TEMP=C:\WINDOWS\Temp,TMPDIR=C:\WINDOWS\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 00:15:14.125 INFO: Web server url: http://127.0.0.1:1601/
+- 00:15:14.125 INFO: remote_debugging_port = 52641
+- 00:15:14.203 DEBUG: Command line string for the browser process: "F:\xampp\htdocs\wika\z-source\setup.exe" --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" --remote-debugging-port=52641 --no-sandbox
+[0504/001515:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:15:15.609 DEBUG: App::OnContextInitialized()
+- 00:15:15.609 DEBUG: Window max width/height = 1200/946
+- 00:15:15.609 DEBUG: GetBrowserWindow(): not found, hwnd = 1443478
+- 00:15:15.609 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 00:15:15.625 DEBUG: BrowserWindow::CreateBrowserControl()
+- 00:15:15.625 DEBUG: StoreBrowserWindow(): hwnd = 1443478
+- 00:15:15.625 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 00:15:15.000 DEBUG: Command line string for the gpu-process process: "F:\xampp\htdocs\wika\z-source\setup.exe" --type=gpu-process --channel="2584.0.636335443\1505811807" --no-sandbox --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,12,22 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x2e12 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2702 --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" /prefetch:822062411
+- 00:15:16.781 DEBUG: ClientHandler::OnAfterCreated()
+- 00:15:16.781 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 00:15:16.781 INFO: DPI, ppix = 96, ppiy = 96
+- 00:15:16.781 INFO: DPI, browser zoom level = 0
+- 00:15:16.922 DEBUG: OnLoadingStateChange: loading=1, url=
+- 00:15:16.000 DEBUG: Command line string for the renderer process: "F:\xampp\htdocs\wika\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" --disable-accelerated-video-decode --channel="2584.1.1405405439\1053476881" /prefetch:673131151
+- 00:15:17.313 DEBUG: OnBrowserCreated()
+[0504/001517:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0504/001517:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0504/001517:ERROR:cache_util.cc(104)] Unable to move cache folder F:\xampp\htdocs\wika\z-source\webcache to F:\xampp\htdocs\wika\z-source\old_webcache_000
+[0504/001517:ERROR:cache_creator.cc(115)] Unable to create cache
+[0504/001520:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:15:21.625 INFO: GET 302 /
+- 00:15:22.079 DEBUG: OnContextCreated()
+[0504/001523:INFO:CONSOLE(77)] "Uncaught TypeError: Object [object Object] has no method 'carouFredSel'", source: http://localhost/wika/assets/logflat/js/main_1.js (77)
+- 00:15:23.719 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/
+[0504/001525:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001530:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001535:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001540:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001545:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001550:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001555:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001600:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001605:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001610:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001615:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001620:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001625:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001630:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001635:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001640:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001645:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001650:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001655:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001700:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:17:02.750 DEBUG: WM_DESTROY
+- 00:17:02.750 DEBUG: RemoveBrowserWindow(): hwnd = 1443478
+- 00:17:02.750 INFO: Stopping Mongoose web server
+- 00:17:02.750 DEBUG: Mongoose webserver stopped immediately
+- 00:17:02.750 DEBUG: RemoveBrowserWindow(): hwnd = 460478
+- 00:17:02.750 DEBUG: GetBrowserWindow(): not found, hwnd = 460478
+- 00:17:02.750 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 00:17:02.938 DEBUG: OnBrowserDestroyed()
+- 00:17:02.016 INFO: Ended application
+- 00:17:02.016 INFO: --------------------------------------------------------
+- 00:17:08.000 INFO: --------------------------------------------------------
+- 00:17:08.000 INFO: Started application
+- 00:17:08.000 INFO: Logging to: F:\xampp\htdocs\wika\z-source\debug.log
+- 00:17:08.000 INFO: Log level = DEBUG4
+- 00:17:08.000 INFO: Starting Mongoose 3.9c web server
+- 00:17:08.000 INFO: WWW directory: F:\xampp\htdocs\wika\z-source\application
+- 00:17:08.000 INFO: Index files: index.html,index.php
+- 00:17:08.000 INFO: CGI interpreter: F:\xampp\htdocs\wika\z-source\application\libraries\php-cgi.exe
+- 00:17:08.000 INFO: CGI pattern: **.php$
+- 00:17:08.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\FOLARI~1\AppData\Local\Temp\
+- 00:17:08.000 INFO: CGI environment variables set: TMP=C:\WINDOWS\Temp,TEMP=C:\WINDOWS\Temp,TMPDIR=C:\WINDOWS\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 00:17:08.000 INFO: Web server url: http://127.0.0.1:1610/
+- 00:17:08.000 INFO: remote_debugging_port = 58129
+- 00:17:08.000 DEBUG: Command line string for the browser process: "F:\xampp\htdocs\wika\z-source\setup.exe" --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" --remote-debugging-port=58129 --no-sandbox
+[0504/001708:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:17:08.125 DEBUG: App::OnContextInitialized()
+- 00:17:08.125 DEBUG: Window max width/height = 1200/946
+- 00:17:08.125 DEBUG: GetBrowserWindow(): not found, hwnd = 526014
+- 00:17:08.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 00:17:08.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 00:17:08.125 DEBUG: StoreBrowserWindow(): hwnd = 526014
+- 00:17:08.157 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 00:17:08.000 DEBUG: Command line string for the gpu-process process: "F:\xampp\htdocs\wika\z-source\setup.exe" --type=gpu-process --channel="3844.0.1989091913\973387543" --no-sandbox --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" --supports-dual-gpus=false --gpu-driver-bug-workarounds=0,3,12,22 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x2e12 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2702 --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" /prefetch:822062411
+- 00:17:08.266 DEBUG: ClientHandler::OnAfterCreated()
+- 00:17:08.266 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 00:17:08.266 INFO: DPI, ppix = 96, ppiy = 96
+- 00:17:08.266 INFO: DPI, browser zoom level = 0
+- 00:17:08.266 DEBUG: OnLoadingStateChange: loading=1, url=
+- 00:17:08.000 DEBUG: Command line string for the renderer process: "F:\xampp\htdocs\wika\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="F:\xampp\htdocs\wika\z-source\debug.log" --disable-accelerated-video-decode --channel="3844.1.443547866\1649535533" /prefetch:673131151
+- 00:17:08.031 DEBUG: OnBrowserCreated()
+[0504/001708:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0504/001708:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0504/001708:ERROR:cache_util.cc(104)] Unable to move cache folder F:\xampp\htdocs\wika\z-source\webcache to F:\xampp\htdocs\wika\z-source\old_webcache_000
+[0504/001708:ERROR:cache_creator.cc(115)] Unable to create cache
+- 00:17:10.672 INFO: GET 302 /
+- 00:17:10.437 DEBUG: OnContextCreated()
+[0504/001710:INFO:CONSOLE(77)] "Uncaught TypeError: Object [object Object] has no method 'carouFredSel'", source: http://localhost/wika/assets/logflat/js/main_1.js (77)
+- 00:17:10.297 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/
+[0504/001713:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001718:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001723:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001728:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:17:30.297 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/
+- 00:17:31.218 DEBUG: OnContextCreated()
+- 00:17:31.578 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/login
+- 00:17:31.594 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/login
+- 00:17:31.437 DEBUG: OnContextCreated()
+- 00:17:32.110 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/001733:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001734:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/001738:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001743:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001748:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001753:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001758:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001803:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001808:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001813:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001818:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:18:20.625 DEBUG: F5 pressed, reloading page
+- 00:18:20.625 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:18:20.343 DEBUG: OnContextCreated()
+- 00:18:20.297 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/001821:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/001823:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001828:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001833:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001838:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001843:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001848:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001853:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001858:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001903:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001908:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:19:08.266 DEBUG: F5 pressed, reloading page
+- 00:19:08.266 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:19:08.968 DEBUG: OnContextCreated()
+- 00:19:09.078 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/001913:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001918:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001923:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001928:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001933:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001938:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001940:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/001943:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:19:44.797 DEBUG: F5 pressed, reloading page
+- 00:19:44.797 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:19:44.500 DEBUG: OnContextCreated()
+- 00:19:45.485 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/001948:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001953:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/001958:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002001:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/002003:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:20:04.891 DEBUG: F5 pressed, reloading page
+- 00:20:04.891 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:20:04.593 DEBUG: OnContextCreated()
+- 00:20:06.422 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002008:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002013:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002018:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002023:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:20:26.063 DEBUG: F5 pressed, reloading page
+- 00:20:26.063 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:20:26.765 DEBUG: OnContextCreated()
+- 00:20:28.875 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002028:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002033:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002038:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002043:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002048:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002053:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002058:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002103:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002108:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002113:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002118:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002123:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002128:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002133:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002138:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002143:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002148:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:21:52.235 DEBUG: F5 pressed, reloading page
+- 00:21:52.235 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:21:52.953 DEBUG: OnContextCreated()
+[0504/002153:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:21:54.250 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002154:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/002158:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002203:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002208:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002213:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002218:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002223:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002228:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002233:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:22:33.422 DEBUG: F5 pressed, reloading page
+- 00:22:33.422 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:22:34.187 DEBUG: OnContextCreated()
+- 00:22:34.141 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002234:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/002238:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:22:40.016 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:22:41.140 DEBUG: OnContextCreated()
+- 00:22:41.032 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/warehouse
+[0504/002242:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/002243:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002248:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002253:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002258:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002303:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002308:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002313:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002318:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002323:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002328:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002333:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002338:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002343:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002348:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002353:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002358:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002403:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002408:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002413:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002418:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002423:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002428:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:24:33.157 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/warehouse
+- 00:24:33.859 DEBUG: OnContextCreated()
+[0504/002433:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:24:34.641 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002438:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002443:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002448:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002453:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002458:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002503:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002508:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002513:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002518:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002523:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002528:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002533:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002538:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002543:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002548:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002553:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002558:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002603:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002608:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002613:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002618:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002623:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002628:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002633:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002638:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002643:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002648:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002653:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002658:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002703:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002708:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002713:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002718:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002723:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002728:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002733:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002738:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002743:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002748:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002753:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002758:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002803:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002808:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002813:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002818:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:28:19.563 DEBUG: F5 pressed, reloading page
+- 00:28:19.563 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:28:19.406 DEBUG: OnContextCreated()
+- 00:28:19.391 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002823:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002828:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002830:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/002833:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002838:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002843:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002848:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002853:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002858:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002903:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002908:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002913:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002918:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:29:21.750 DEBUG: F5 pressed, reloading page
+- 00:29:21.750 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:29:21.547 DEBUG: OnContextCreated()
+- 00:29:22.641 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002923:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002928:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002933:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:29:34.547 DEBUG: F5 pressed, reloading page
+- 00:29:34.547 DEBUG: OnLoadingStateChange: loading=1, url=http://localhost/wika/dashboard
+- 00:29:34.265 DEBUG: OnContextCreated()
+- 00:29:34.110 DEBUG: OnLoadingStateChange: loading=0, url=http://localhost/wika/dashboard
+[0504/002935:INFO:CONSOLE(0)] "event.returnValue is deprecated. Please use the standard event.preventDefault() instead.", source:  (0)
+[0504/002938:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002943:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002948:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002953:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/002958:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003003:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003008:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003013:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003018:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003023:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003028:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003033:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003038:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003043:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003048:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003053:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003058:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003103:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003108:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003110:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003110:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003111:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003112:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003113:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003115:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003115:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003116:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0504/003117:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:31:18.969 DEBUG: WM_DESTROY
+- 00:31:18.969 DEBUG: RemoveBrowserWindow(): hwnd = 526014
+- 00:31:18.969 INFO: Stopping Mongoose web server
+- 00:31:18.969 DEBUG: Mongoose webserver stopped immediately
+- 00:31:18.969 DEBUG: RemoveBrowserWindow(): hwnd = 198668
+- 00:31:18.969 DEBUG: GetBrowserWindow(): not found, hwnd = 198668
+- 00:31:18.969 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+[0504/003118:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 00:31:19.265 DEBUG: OnBrowserDestroyed()
+- 00:31:19.703 INFO: Ended application
+- 00:31:19.703 INFO: --------------------------------------------------------
+- 17:18:23.109 INFO: --------------------------------------------------------
+- 17:18:23.109 INFO: Started application
+- 17:18:23.109 INFO: Logging to: X:\xampp\htdocs\wika\z-source\debug.log
+- 17:18:23.109 INFO: Log level = DEBUG4
+- 17:18:23.109 INFO: Starting Mongoose 3.9c web server
+- 17:18:23.109 INFO: WWW directory: X:\xampp\htdocs\wika\z-source\application
+- 17:18:23.109 INFO: Index files: index.html,index.php
+- 17:18:23.109 INFO: CGI interpreter: X:\xampp\htdocs\wika\z-source\application\libraries\php-cgi.exe
+- 17:18:23.109 INFO: CGI pattern: **.php$
+- 17:18:23.109 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\WIKASE~1\AppData\Local\Temp\
+- 17:18:23.109 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=31.8
+- 17:18:23.125 INFO: Web server url: http://127.0.0.1:1566/
+- 17:18:23.125 INFO: remote_debugging_port = 58987
+- 17:18:23.218 DEBUG: Command line string for the browser process: "X:\xampp\htdocs\wika\z-source\setup.exe" --lang=en-US --log-file="X:\xampp\htdocs\wika\z-source\debug.log" --remote-debugging-port=58987 --no-sandbox
+[0718/171825:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 17:18:26.047 DEBUG: App::OnContextInitialized()
+- 17:18:26.047 DEBUG: Window max width/height = 944/690
+- 17:18:26.047 DEBUG: Window max size exceeded, new width/height = 944/690
+- 17:18:26.047 DEBUG: GetBrowserWindow(): not found, hwnd = 197786
+- 17:18:26.047 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:18:26.140 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:18:26.140 DEBUG: StoreBrowserWindow(): hwnd = 197786
+- 17:18:26.156 DEBUG: BrowserWindow::OnSize() failed: CefBrowser object not created yet
+- 17:18:27.843 DEBUG: ClientHandler::OnAfterCreated()
+- 17:18:27.875 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:18:27.890 INFO: DPI, ppix = 96, ppiy = 96
+- 17:18:27.890 INFO: DPI, browser zoom level = 0
+- 17:18:27.484 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:18:27.000 DEBUG: Command line string for the renderer process: "X:\xampp\htdocs\wika\z-source\setup.exe" --type=renderer --no-sandbox --lang=en-US --lang=en-US --log-file="X:\xampp\htdocs\wika\z-source\debug.log" --disable-webgl --disable-pepper-3d --disable-gl-multisampling --disable-accelerated-compositing --disable-accelerated-2d-canvas --disable-accelerated-video-decode --channel="2204.0.1643146399\467352096" /prefetch:673131151
+- 17:18:29.703 DEBUG: OnBrowserCreated()
+[0718/171830:ERROR:backend_impl.cc(2014)] Corrupt Index file
+[0718/171830:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0718/171830:ERROR:cache_util.cc(104)] Unable to move cache folder X:\xampp\htdocs\wika\z-source\webcache to X:\xampp\htdocs\wika\z-source\old_webcache_000
+[0718/171830:ERROR:cache_creator.cc(115)] Unable to create cache
+[0718/171830:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0718/171835:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+- 17:18:35.265 INFO: GET 302 /
+- 17:18:36.390 DEBUG: OnLoadError, errorCode=-106, failedUrl=http://192.168.88.252/
+- 17:18:38.390 DEBUG: OnContextCreated()

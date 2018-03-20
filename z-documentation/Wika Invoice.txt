@@ -1,0 +1,17 @@
+invoice
+no.kwitansi = invoice_number
+faktur pajak = invoice_tax_serial
+tanggal terima kw = invoice_date_kwt
+tanggal proyek = invoice_date_pry
+DEPT = kosong
+umur = tanggal hari invoice (invoice_date_kwt) hingga hari ini (dalam satuan hari)
+netto = invoice_netto
+ppn = invoice_tax yang tax nya adalah ppn
+bruto = netto + ppn
+
+tambah invoice_status 
+
+invoice laporan ada : 
+- invoice keseluruhan baik dibayar ataupun belum. Ada parameter supplier / tanggal (range) e sopo (dropdown e gabung antara supplier dan subkon)
+- invoice belum dibayar *outstanding parameter e range tanggal
+- invoice sudah dibayar *paid parameter e range tanggal 

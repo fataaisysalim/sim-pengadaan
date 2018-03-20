@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Beranda</title>
+        <meta name="description" content="Point of Sale for Restaurant & Cafe">
+        <meta name="author" content="CV. Folarium Technomedia">
+        <link rel="icon" href="http://localhost/forder-nasiudukpalagan/assets/img/favicon.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/min/main.min.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-select/bootstrap-select.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/vendor/datatables/jquery.dataTables.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-datepicker/datepicker.css">
+        <link rel="stylesheet" href="http://localhost/forder-nasiudukpalagan/assets/js/jquery-ui.css">
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/jquery-1.11.1.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/jquery.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/modernizr.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="app">
+            <header class="header header-fixed navbar bg-white">
+    <a role="button" style="cursor: pointer; color: white" class="fa fa-bars navbar-toggle off-left visible-xs" data-toggle="collapse" data-target="#hor-menu"></a>
+    <div class="brand bg-dark width-auto">
+        <a href="http://localhost/forder-nasiudukpalagan/home" class="navbar-brand"  style="color: white;">
+            FORDER        </a>
+    </div>
+    <div class="collapse navbar-collapse pull-left no-padding " id="hor-menu">
+        <ul class="nav navbar-nav" >
+            <li class="active hidden-xs">
+                <a href="http://localhost/forder-nasiudukpalagan/home"><i class="fa fa-home"></i><span class="visible-lg mg-l-sm pull-right"> Home</span></a>
+            </li>
+                            <li class="dropdown show-on-hover ">
+                    <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                        <i class="fa fa-archive col-xs-2 visible-xs"></i><i class="fa fa-archive mg-r-sm hidden-xs"></i>
+                        <span class="hidden-sm">Master Data</span>
+                        <b class="caret mg-l-md"></b>
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li class="">
+                            <a href="http://localhost/forder-nasiudukpalagan/master/menu"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Menu/Item Master</span></a>
+                        </li>
+                        <li class="">
+                            <a href="http://localhost/forder-nasiudukpalagan/table-master"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Table Master</span></a>
+                        </li>
+                        <li class="">
+                            <a href="http://localhost/forder-nasiudukpalagan/master/users"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>User Permission</span></a>
+                        </li>
+                    </ul>
+                </li>
+                        <li class=" hidden-xs">
+                <a href="http://localhost/forder-nasiudukpalagan/order"><i class="fa fa-thumb-tack mg-r-md mg-r-sm"></i><span> Order</span></a>
+            </li>
+                            <li class="">
+                    <a href="http://localhost/forder-nasiudukpalagan/cashier"><i class="fa fa-money col-xs-2 visible-xs"></i><i class="fa fa-money mg-r-sm hidden-xs"></i><span> Cashier</span></a>
+                </li>
+            
+            <li class="dropdown show-on-hover  ">
+                <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                    <i class="fa fa-th-large col-xs-2 visible-xs"></i><i class="fa fa-th-large mg-r-sm hidden-xs"></i>
+                    <span>Information</span>
+                    <b class="caret mg-l-md"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a role="button" class="info_menu" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Menu Available</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_meja" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Table Available</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_order" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Orders</span></a>
+                    </li>
+                    <li>
+                        <a role="button" class="info_pay" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Payments</span></a>
+                    </li>
+                                            <li>
+                            <a role="button" id="menu_sold" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Average Menu Sold Out</span></a>
+                        </li>
+                                                                <li>
+                            <a role="button" id="info_menu_best" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-lg"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>15 Menu Best Seller</span></a>
+                        </li>
+                                    </ul>
+            </li>
+                                        <li class="dropdown show-on-hover hidden-xs ">
+                    <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                        <i class="fa fa-dollar mg-r-sm"></i>
+                        <span class="hidden-sm">Finance</span>
+                        <b class="caret mg-l-sm"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                                                    <li class=" hidden-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/spending"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Spending</span></a>
+                            </li>
+                                                                            <li class="">
+                                <a href="http://localhost/forder-nasiudukpalagan/saldo"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i><span>Saldo</span></a>
+                            </li>
+
+                            <li class=" hidden-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/profit-report"><i class="fa fa-chevron-right col-xs-2 visible-xs"></i><i class="fa fa-chevron-right mg-r-sm hidden-xs"></i>Profit Report</a>
+                            </li>
+        <!--                            <li class=" hidden-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/report/operational_cooperation"><i class="fa fa-chevron-right mg-r-md"></i><span>KSO</span></a>
+                            </li>-->
+                                            </ul>
+                </li>
+                                    <li class=" visible-xs">
+                        <a href="http://localhost/forder-nasiudukpalagan/spending"><i class="fa fa-suitcase col-xs-2"></i><span> Spending</span></a>
+                    </li>
+                                                       <li class=" visible-xs">
+                                <a href="http://localhost/forder-nasiudukpalagan/saldo"><i class="fa fa-cloud-upload col-xs-2 visible-xs"></i><i class="fa fa-cloud-upload mg-r-sm hidden-xs"></i><span>Saldo</span></a>
+                            </li>
+                                                    <li class=" visible-xs">
+                        <a href="http://localhost/forder-nasiudukpalagan/profit-report"><i class="fa fa-clipboard col-xs-2"></i>Profit Report</a>
+                    </li>
+                            
+                            <li class="">
+                    <a href="http://localhost/forder-nasiudukpalagan/apps/profile"><i class="fa fa-gears col-xs-2 visible-xs"></i><i class="fa fa-gears mg-r-sm hidden-xs"></i><span class="hidden-sm"> Settings</span></a>
+                </li>
+                        <li class="visible-sm">
+                <a role="button" style="cursor: pointer" class="logout"><i class="fa fa-sign-out"></i></a>
+            </li>
+        </ul>
+    </div>
+    <a role="button" style="cursor: pointer; color: white" class="logout visible-xs off-right btn btn-lg"><i class="fa fa-sign-out"></i></a>
+    <ul class="nav navbar-nav navbar-right visible-lg visible-md off-right">
+        <li class="">
+            <a role="button" title="Tentang Vendor" class="about_forder" style="cursor: pointer" data-toggle="modal" data-target=".bs-modal-sm"><i class="fa fa-info-circle"></i></a>
+        </li>
+        <li class="quickmenu show-on-hover mg-r-md ">
+            <a role="button" style="cursor: pointer" data-toggle="dropdown">
+                <i class="fa fa-user mg-r-sm"></i>
+                <i class="caret mg-l-xs hidden-xs no-margin"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right mg-r-xs">
+                <li class=""><a href="http://localhost/forder-nasiudukpalagan/setting/profile"><i class="fa fa-gear mg-r-sm"></i> Anissa</a></li>
+                <li class="divider"></li>
+                <li><a role="button" style="cursor: pointer" class="logout"><i class="fa fa-sign-out mg-r-sm"></i> Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>    
+            <section class="layout">
+                <section class="main-content">
+                    <div class="content-wrap">
+                        <div class="row">
+    <div class="col-md-12 mg-b-md">
+        <section class="panel no-border  position-relative ">
+            <div class="ribbon ribbon-danger">
+                <div class="banner">
+                    <div class="text">FORDER 1.0</div>
+                </div>
+            </div>
+            <div class="panel-body" style="color: white; background:url('http://localhost/forder-nasiudukpalagan/assets/img/background.jpg') 100% center no-repeat; padding: 30px">
+                <div class="col-lg-3 col-sm-4 col-xs-12 visible-lg visible-sm visible-xs">
+                    <img src="http://localhost/forder-nasiudukpalagan/assets/img/favicon.png" style="margin-top: -15px"/>
+                    <div class="homepage visible-sm visible-lg">
+                        <br class="mg-b-sm">
+                        <small style="font-size: 100%;">2016 &COPY; Digital Resto System.<br/>Powered by <a href="http://www.folarium.org" target="_blank" style="color: white; font-style: italic;">Folarium Technomedia</a>.</small>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-8 ">
+                    <div class="row">
+                        <div class="col-md-2 visible-md">
+                            <img src="http://localhost/forder-nasiudukpalagan/assets/img/favicon.png" style="margin-top: -15px; width: 80%"/>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-xs-12">
+                            <div class="row">
+                                <br class="mg-t hidden-lg hidden-md">
+                                <span style="font-size: 20px; font-weight: bold" class="homepage">Welcome to FORDER (<i>Restaurant Management System</i>) </span><br/><br/>
+                                                                    <i class="hidden-xs">Untuk melihat grafik profit tahun sebelumnya silahkan masuk ke fitur <b>profit report</b></i>
+                                                            </div>
+                        </div>
+                                                <div class="col-md-12">
+                            <div class="row">
+                                <div class="loadorer_info row mg-t mg-b "></div>        
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="homepage hidden-sm hidden-lg">
+                        <div>
+                            <div class="row">
+                                <small style="font-size: 100%;" class="row">2016 &COPY; Digital Resto System.<br/>Powered by <a href="http://www.folarium.org" target="_blank" style="color: white; font-style: italic;">Folarium Technomedia</a>.</small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+            loadgraph();
+    });
+        function loadgraph(){
+            $(".loadorer_info").load('http://localhost/forder-nasiudukpalagan/report/finance/graph_profit/2016');
+        };
+</script>                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title text-center" id="myModalLabel">Loading please wait...</h5>
+            </div>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title text-center" id="myModalLabel">Loading please wait...</h5>
+            </div>
+            <div id="modal-contents"></div>
+        </div>
+    </div>
+</div>        <script type="text/javascript">
+            var now = "13-01-2016";
+            var baseUrl = "http://localhost/forder-nasiudukpalagan/";
+            $("#menu_sold").click(function() {
+                $(".modal-title").html('<div class="loader mg-t"><i class="fa fa-spin fa-refresh mg-r-md"></i>Loading data. Please wait...');
+                $("#modal-contents").html("");
+                $("#modal-contents").load(baseUrl + "info/menu/info_menu/menu_sold")
+            });
+            $("#info_menu_best").click(function() {
+                $(".modal-title").html('<div class="loader mg-t"><i class="fa fa-spin fa-refresh mg-r-md"></i>Loading data. Please wait...');
+                $("#modal-contents").html("");
+                $("#modal-contents").load(baseUrl + "info/menu/info_menu/menu_best")
+            });
+        </script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/folarium/for.library.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/min/main.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/bootbox/bootbox.min.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/datatables/jquery.dataTables.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-select/bootstrap-select.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/slider/bootstrap-slider.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/highcharts.js"></script>
+        <script src="http://localhost/forder-nasiudukpalagan/assets/js/exporting.js"></script>
+    </body>
+</html>
