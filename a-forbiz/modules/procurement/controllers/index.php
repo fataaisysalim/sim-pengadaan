@@ -14,6 +14,7 @@ class Index extends MY_Controller {
     }
 
     public function index() {
+		die('a');
         $data['sess'] = $this->authentication_root();
         $data['title'] = $this->title;
         $data['header'] = $this->header;
